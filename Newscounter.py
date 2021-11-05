@@ -54,18 +54,24 @@ class Newscounter:
         self.freq_table.to_csv(self.path + "Base_Data/searchterm_mentions_count", index=False)
 
     def party_count(self):
-        party_dict = {k: v[v.notna()].to_dict() for k,v in self.party_searchterms.items()}
-        for party, searchterms in party_dict.items():
-            party_dict[party] = self.freq_table.loc[:,searchterms.values()].sum(axis=1)
-        self.party_frame = pd.concat([self.freq_table.loc[:,["date", "newspaper"]], pd.DataFrame.from_dict(party_dict)], axis=1)
+        self.party_dict = {k: v[v.notna()].to_dict() for k,v in self.party_searchterms.items()}
+        for party, searchterms in self.party_dict.items():
+            self.party_dict[party] = self.freq_table.loc[:,searchterms.values()].sum(axis=1)
+        self.party_frame = pd.concat([self.freq_table.loc[:,["date", "newspaper"]], pd.DataFrame.from_dict(self.party_dict)], axis=1)
         self.party_frame.to_csv(self.path + "Base_Data/party_mentions_count", index=False)
 
     def absolute_count(self):
         first_part = self.party_frame
         second_part = self.freq_table.drop(self.freq_table.columns[list(range(26))], axis=1)
-        self.final_table = pd.concat([first_part, second_part], axis=1)
-        self.final_table = self.date_casting(self.final_table)
-        self.final_table.to_csv(self.path + "Data_Visuals/mentions_absolute", index=False)
+        self.absolute_table = pd.concat([first_part, second_part], axis=1)
+        self.absolute_table = self.date_casting(self.absolute_table)
+        self.absolute_table.to_csv(self.path + "Data_Visuals/mentions_absolute", index=False)
+
+    def relative_count(self):
+        relative_parties = (self.absolute_table.iloc[:,2:8].div(self.absolute_table.iloc[:,2:8].sum(axis=1), axis=0)*100).round(2).fillna(0)
+        relative_individuals = (self.absolute_table.iloc[:,8:].div(self.absolute_table.iloc[:,8:].sum(axis=1), axis=0)*100).round(2).fillna(0)
+        self.relative_table = pd.concat([self.absolute_table.loc[:,["date", "newspaper"]], relative_parties, relative_individuals], axis=1)
+        self.relative_table.to_csv(self.path + "Data_Visuals/mentions_relative", index=False)
 
     def date_casting(self, df, earliest_date = "01.01.2021"):
         earliest_date = pendulum.parse(earliest_date, strict=False).format("YYYY-MM-DD")
@@ -83,8 +89,25 @@ class Newscounter:
         self.save_freq_count()
         self.party_count()
         self.absolute_count()
+        self.relative_count()
 
 
 if __name__ == "__main__":
     counter = Newscounter()
     counter.fit()
+
+
+    #absolute = pd.read_csv("/Users/macbook/Desktop/Python_Files/NewsPoll/Data/Data_Visuals/mentions_absolute")
+    #print(absolute.iloc[:,8:])
+    '''relative = (absolute.iloc[:,2:8].div(absolute.iloc[:,2:8].sum(axis=1), axis=0)*100).round(2).fillna(0)
+    print(absolute.iloc[:,2:8].head(5))
+    for idx, row in enumerate(zip(relative.itertuples(index=False), absolute.iloc[:,2:8].itertuples(index=False))):
+        if idx > 370:
+            print("idx:", idx)
+            print("sum:", row[0])
+            print("absolute:", row[1])
+            print()
+        if idx > 400:
+            break'''
+
+

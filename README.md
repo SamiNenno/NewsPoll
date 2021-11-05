@@ -1,7 +1,7 @@
 ![alt text](https://raw.githubusercontent.com/SamiNenno/NewsPoll/master/Images/Front_Image.png)
 
 
-# NewsCoveragePolls
+# NewsPolls
 
 Project for "Fortgeschrittene Softwaretechnik"
 

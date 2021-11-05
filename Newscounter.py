@@ -95,19 +95,3 @@ class Newscounter:
 if __name__ == "__main__":
     counter = Newscounter()
     counter.fit()
-
-
-    #absolute = pd.read_csv("/Users/macbook/Desktop/Python_Files/NewsPoll/Data/Data_Visuals/mentions_absolute")
-    #print(absolute.iloc[:,8:])
-    '''relative = (absolute.iloc[:,2:8].div(absolute.iloc[:,2:8].sum(axis=1), axis=0)*100).round(2).fillna(0)
-    print(absolute.iloc[:,2:8].head(5))
-    for idx, row in enumerate(zip(relative.itertuples(index=False), absolute.iloc[:,2:8].itertuples(index=False))):
-        if idx > 370:
-            print("idx:", idx)
-            print("sum:", row[0])
-            print("absolute:", row[1])
-            print()
-        if idx > 400:
-            break'''
-
-

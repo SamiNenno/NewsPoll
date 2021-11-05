@@ -122,10 +122,22 @@ class Visuals:
                 name=party,
                 marker_color = colors[idx],
                 line={"dash" : "dot"},
+                yaxis='y2'
             )
 
-            fig.add_trace(trace1)
-            fig.add_trace(trace2, secondary_y=True)
+            fig.add_trace(trace1, secondary_y=False)
+            fig.add_trace(trace2, secondary_y=False)
+        fig.update_xaxes(rangeslider_visible=True, )
+        fig.update_layout(
+            title="Comparison of newspaper mentions and poll results for German parties",
+            xaxis_title="Date",
+            yaxis_title="Percent",
+            legend_title="— Newspaper / -- Poll",
+            font=dict(
+                size=16,
+                color="Black"
+            )
+        )
         fig.show()
 
     def compare_individual_count(self, politician:str, party:str):
@@ -147,16 +159,20 @@ class Visuals:
             line={"dash": "dot"}
         )
 
-        fig.add_trace(trace1)
+        fig.add_trace(trace1, secondary_y=False)
         fig.add_trace(trace2, secondary_y=True)
+        fig.update_xaxes(rangeslider_visible=True, )
         fig.show()
 
 if __name__ == "__main__":
     vis = Visuals()
-    '''vis.individual_count("Merkel")
-    vis.multiple_count(["Scholz", "Laschet", "Baerbock"])
-    vis.multiple_count(["Scholz", "Laschet", "Baerbock"],False)'''
+    #vis.individual_count("Merkel")
+    #vis.multiple_count(["Scholz", "Laschet", "Baerbock"])
+    #vis.multiple_count(["Scholz", "Laschet", "Baerbock"],False)
     #vis.party_count()
     #vis.plot_poll()
-    #vis.compare_count()
-    vis.compare_individual_count("Baerbock", "GRÜNE")
+    vis.compare_party_count()
+    #vis.compare_individual_count("Baerbock", "GRÜNE")
+    #vis.compare_individual_count("Scholz", "SPD")
+    #vis.compare_individual_count("Laschet", "CDU/CSU")
+    #vis.test()

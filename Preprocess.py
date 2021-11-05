@@ -159,8 +159,9 @@ class Poll():
         self.poll_frame = pd.DataFrame.from_dict(self.poll_dict)
 
     def select_relevant_polls(self):
-        earliest_date = pendulum.parse("01.01.2021", strict=False).format("YYYY-MM-DD")
-        today = pendulum.now().format("YYYY-MM-DD")
+        # Start June 2021
+        earliest_date = pendulum.parse("06.01.2021", strict=False).format("YYYY-MM-DD")
+        self.poll_frame["published"] = self.poll_frame.apply(lambda row: pendulum.parse(row["published"], strict=False).format("YYYY-MM-DD"), axis=1)
         self.reduced_poll_frame = self.poll_frame[(self.poll_frame["published"] > earliest_date) & (self.poll_frame["parliament"] == "Bundestag")]
         self.reduced_poll_frame = self.reduced_poll_frame.drop(columns=['CDU', 'CSU'])
 
@@ -255,12 +256,12 @@ class Frequency_Table():
 if __name__ == "__main__":
     poll = Poll()
     poll.fit()
-    keywords = Keywords()
+    '''keywords = Keywords()
     keywords.fit()
     rel = Relevance()
     rel.fit()
     freq = Frequency_Table()
-    freq.fit()
+    freq.fit()'''
 
 
 

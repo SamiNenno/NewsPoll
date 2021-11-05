@@ -69,11 +69,11 @@ class Newscounter:
 
     def relative_count(self):
         relative_parties = (self.absolute_table.iloc[:,2:8].div(self.absolute_table.iloc[:,2:8].sum(axis=1), axis=0)*100).round(2).fillna(0)
-        relative_individuals = (self.absolute_table.iloc[:,8:].div(self.absolute_table.iloc[:,8:].sum(axis=1), axis=0)*100).round(2).fillna(0)
+        relative_individuals = (self.absolute_table.iloc[:, 8:].div(self.absolute_table.iloc[:, 8:].sum(axis=1),axis=0) * 100).round(2).fillna(0)
         self.relative_table = pd.concat([self.absolute_table.loc[:,["date", "newspaper"]], relative_parties, relative_individuals], axis=1)
         self.relative_table.to_csv(self.path + "Data_Visuals/mentions_relative", index=False)
 
-    def date_casting(self, df, earliest_date = "01.01.2021"):
+    def date_casting(self, df, earliest_date = "06.01.2021"):
         earliest_date = pendulum.parse(earliest_date, strict=False).format("YYYY-MM-DD")
         today = pendulum.now().format("YYYY-MM-DD")
         df["date"] = \
@@ -95,3 +95,4 @@ class Newscounter:
 if __name__ == "__main__":
     counter = Newscounter()
     counter.fit()
+

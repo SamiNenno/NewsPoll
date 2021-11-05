@@ -1,4 +1,4 @@
-![alt text](https://raw.githubusercontent.com/SamiNenno/NewsCoveragePolls/master/Images/Frontpicture.png)
+![alt text](https://raw.githubusercontent.com/SamiNenno/NewsPoll/master/Images/Front_Image.png)
 
 
 # NewsCoveragePolls

@@ -3,6 +3,5 @@
 
 # NewsPolls
 
-Project for "Fortgeschrittene Softwaretechnik"
 
 Compares news coverage of German politicians/parties to election polls.

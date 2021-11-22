@@ -6,44 +6,6 @@ import requests
 import numpy as np
 from flashtext import KeywordProcessor
 
-class Relevance:
-    def __init__(self):
-        self.path = os.getcwd()+"/Data/"
-        ## Note that the newscollection is not uploaded to Github
-        ## Right now (4.11.2021) it contains 35.000 aricles
-        self.newscollection = pd.read_csv(self.path + "Newscollection/NewsCollection.csv")
-        self.newscollection["Contains.Keyword"] = np.nan
-        self.searchterms = pd.read_csv(self.path+"Base_Data/searchterms")["searchterms"].to_list()
-        self.searchterm_dict = {}
-        self.create_search_dict()
-        self.keyword_processor = KeywordProcessor()
-        self.keyword_processor.add_keywords_from_dict(self.searchterm_dict)
-
-    def create_search_dict(self):
-        for searchterm in self.searchterms:
-            self.searchterm_dict[searchterm] = [searchterm, searchterm+"s"]
-
-    def search(self):
-        print("Select articles that contain searchterm...")
-        for idx, article in enumerate(self.newscollection.itertuples(index=False, name=None)):
-            if type(article[3]) is str:
-                keywords = self.keyword_processor.extract_keywords(article[3])
-                if keywords:
-                    print(f"Match in: {article[0]} from {article[6]}")
-                    self.newscollection.loc[idx,"Contains.Keyword"] = True
-                else:
-                    self.newscollection.loc[idx,"Contains.Keyword"] = False
-            else:
-                continue
-
-    def save_checked_newcollection(self):
-        self.newscollection[self.newscollection["Contains.Keyword"] == True].to_csv(
-            self.path + "Newscollection/articles.csv", index=False)
-
-    def fit(self):
-        self.search()
-        self.save_checked_newcollection()
-
 class Poll():
     ## Poll Data is retrieved from https://dawum.de/
     def __init__(self, refresh = True):
@@ -224,7 +186,49 @@ class Keywords():
         self.create_searchterms()
         self.save_searchterms()
 
+
+class Relevance:
+    def __init__(self):
+        self.path = os.getcwd()+"/Data/"
+        ## Note that the newscollection is not uploaded to Github
+        ## Right now (4.11.2021) it contains 35.000 aricles
+        self.newscollection = pd.read_csv(self.path + "Newscollection/NewsCollection.csv")
+        self.newscollection["Contains.Keyword"] = np.nan
+        self.searchterms = pd.read_csv(self.path+"Base_Data/searchterms")["searchterms"].to_list()
+        self.searchterm_dict = {}
+        self.create_search_dict()
+        self.keyword_processor = KeywordProcessor()
+        self.keyword_processor.add_keywords_from_dict(self.searchterm_dict)
+
+    def create_search_dict(self):
+        for searchterm in self.searchterms:
+            self.searchterm_dict[searchterm] = [searchterm, searchterm+"s"]
+
+    def search(self):
+        print("Select articles that contain searchterm...")
+        for idx, article in enumerate(self.newscollection.itertuples(index=False, name=None)):
+            if type(article[3]) is str:
+                keywords = self.keyword_processor.extract_keywords(article[3])
+                if keywords:
+                    print(f"Match in: {article[0]} from {article[6]}")
+                    self.newscollection.loc[idx,"Contains.Keyword"] = True
+                else:
+                    self.newscollection.loc[idx,"Contains.Keyword"] = False
+            else:
+                continue
+
+    def save_checked_newcollection(self):
+        self.newscollection[self.newscollection["Contains.Keyword"] == True].to_csv(
+            self.path + "Newscollection/articles.csv", index=False)
+
+    def fit(self):
+        self.search()
+        self.save_checked_newcollection()
+
+
+
 class Frequency_Table():
+    ### This should also work fpr sentiment
     def __init__(self):
         print("Create empty frame for mentions count...\n")
         self.path = os.getcwd() + "/Data/"

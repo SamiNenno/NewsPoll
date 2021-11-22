@@ -13,7 +13,7 @@ class Visuals:
         self.poll = pd.read_csv(self.path + "/Data_Visuals/polls")
         self.parties = ["CDU/CSU","SPD","GRÜNE","LINKE","FDP","AFD"]
 
-    def individual_count(self, searchterm:str, relative = True):
+    def individual_count(self, searchterm:str, relative:bool = True):
         if searchterm not in self.searchterms + self.parties:
             print("Searchterm is not valid. Please check spelling.")
             return
@@ -38,7 +38,7 @@ class Visuals:
         fig.update_xaxes(rangeslider_visible=True,)
         fig.show()
 
-    def multiple_count(self, searchterms:list, relative=True):
+    def multiple_count(self, searchterms:list, relative:bool = True):
         for searchterm in searchterms:
             if searchterm not in self.searchterms + self.parties:
                 print("Searchterm is not valid. Please check spelling.")
@@ -64,7 +64,7 @@ class Visuals:
         fig.update_xaxes(rangeslider_visible=True,)
         fig.show()
 
-    def party_count(self, relative = True):
+    def party_count(self, relative:bool = True):
         if relative:
             freq_table = self.relative_count.groupby("date", as_index=False).mean()
         else:

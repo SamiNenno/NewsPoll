@@ -27,7 +27,7 @@ class Newscounter:
         for searchterm in self.searchterms:
             self.searchterm_dict[searchterm] = [searchterm, searchterm + "s"]
 
-    def count(self, safe_n_steps = 0):
+    def count(self):
         print("Start counting...\n")
         for idx, article in enumerate(self.newscollection.itertuples(index=False, name=None)):
             date = article[self.date] if type(article[self.date]) is str else "No.Date"
@@ -73,7 +73,7 @@ class Newscounter:
         self.relative_table = pd.concat([self.absolute_table.loc[:,["date", "newspaper"]], relative_parties, relative_individuals], axis=1)
         self.relative_table.to_csv(self.path + "Data_Visuals/mentions_relative", index=False)
 
-    def date_casting(self, df, earliest_date = "06.01.2021"):
+    def date_casting(self, df, earliest_date:str = "06.01.2021"):
         earliest_date = pendulum.parse(earliest_date, strict=False).format("YYYY-MM-DD")
         today = pendulum.now().format("YYYY-MM-DD")
         df["date"] = \

@@ -11,6 +11,7 @@ Compares news coverage of German politicians/parties to election polls.
 
 1. Use and understand Git!
 2. UML at least 3 good diagrams. "good" means you can pump it up artificially as written in DDD. You have 10 million $ from me! Please export the pics. I can not install all tools to view them!
+    --> see folder UML
 3. DDD If your domain is too small, invent other domains around and document these domains (as if you have 10 Mio € from Edlich-Investment!) Develop a clear strategic design with mappings/relationships with 5-0 Domains. It would be nice if these domains are derived from an Event-Storming (but not mandatory).
 4. Metrics at least two. Sonarcube would be great. Other non trivial metrics are also fine.
 5. Clean Code Development: at least 5 points you can show me + >>10 points on your personal cheat sheet

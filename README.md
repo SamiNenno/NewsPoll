@@ -33,8 +33,8 @@ Compares news coverage of German politicians/parties to election polls.
 **10.** DSL Create a small DSL Demo example snippet in your code even if it does not contribute to your project
 
 **11.** Functional Programming (prove that you have covered all functional aspects in your code as
-    - only final data structures
-    - (mostly) side effect free functions
-    - the use of higher-order functions
-    - functions as parameters and return values
-    - use closures / anonymous functions
+    * only final data structures
+    * (mostly) side effect free functions
+    * the use of higher-order functions
+    * functions as parameters and return values
+    * use closures / anonymous functions

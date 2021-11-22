@@ -19,6 +19,8 @@ Compares news coverage of German politicians/parties to election polls.
 7. Integrate some nice Unit-Tests in your Code to be integrated into the Build
 8. Continuous Delivery: show me your pipeline in e.g. Jenkins, Travis-CI, Circle-CI, GitHub Action, GitLab CI, etc.
 9. Use a good IDE and get fluent with it as e.g. IntelliJ. What are your favorite Key-Shortcuts?!
+    --> Pycharm: Probably, ^+alt+r for run, cmd+k for commit, shift+cmd+K for push
+        Furthermore, it is helpful to add big data files to the gitignore file (no shortcut, though)
 10. DSL Create a small DSL Demo example snippet in your code even if it does not contribute to your project
 11. Functional Programming (prove that you have covered all functional aspects in your code as
     - only final data structures

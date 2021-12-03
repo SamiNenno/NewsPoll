@@ -23,7 +23,7 @@ Compares news coverage of German politicians/parties to election polls.
 **6.** Build Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc.
 
 **7.** Integrate some nice Unit-Tests in your Code to be integrated into the Build
-    *--> see folder Unittests_Scripts
+    *--> see folder Unittests_Scripts*
 
 **8.** Continuous Delivery: show me your pipeline in e.g. Jenkins, Travis-CI, Circle-CI, GitHub Action, GitLab CI, etc.
 

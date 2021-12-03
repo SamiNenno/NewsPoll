@@ -8,11 +8,12 @@ from flashtext import KeywordProcessor
 
 class Poll():
     ## Poll Data is retrieved from https://dawum.de/
-    def __init__(self, refresh = True):
+    def __init__(self, refresh = True, path="None"):
         print("Load poll data...\n")
         self.refresh = refresh
         self.url = "https://api.dawum.de/"
-        self.path = os.getcwd()+"/Data/"
+        self.path = os.getcwd()+"/Data/" if path=="None" else path
+
         if self.refresh is True:
             self.poll_data = requests.get(self.url).json()
             with open(self.path+"Base_Data/poll_data.json", "w+") as f:
@@ -134,9 +135,9 @@ class Poll():
         self.reduced_poll_frame.to_csv(self.path + "Data_Visuals/polls", index=False)
 
 class Keywords():
-    def __init__(self):
+    def __init__(self, path="None"):
         print("Create searchterms...\n")
-        self.path = os.getcwd()+"/Data/"
+        self.path = os.getcwd()+"/Data/" if path=="None" else path
         self.abgeordnete = pd.read_csv(self.path + "Base_Data/abgeordnete_total")
         self.manual = pd.read_csv(self.path + "Base_Data/manual_keywords")
         self.search_terms = []
@@ -188,8 +189,8 @@ class Keywords():
 
 
 class Relevance:
-    def __init__(self):
-        self.path = os.getcwd()+"/Data/"
+    def __init__(self, path="None"):
+        self.path = os.getcwd()+"/Data/" if path=="None" else path
         ## Note that the newscollection is not uploaded to Github
         ## Right now (4.11.2021) it contains 35.000 aricles
         self.newscollection = pd.read_csv(self.path + "Newscollection/NewsCollection.csv")
@@ -229,9 +230,9 @@ class Relevance:
 
 class Frequency_Table():
     ### This should also work fpr sentiment
-    def __init__(self):
+    def __init__(self, path="None"):
         print("Create empty frame for mentions count...\n")
-        self.path = os.getcwd() + "/Data/"
+        self.path = os.getcwd() + "/Data/" if path == "None" else path
         self.newscollection = pd.read_csv(self.path+"Newscollection/articles.csv")
         self.searchterms = pd.read_csv(self.path+"Base_Data/searchterms")
         self.date = np.array([date if type(date) is str else "No.Date" for date in pd.unique(self.newscollection["date"])])
@@ -258,15 +259,19 @@ class Frequency_Table():
 
 
 if __name__ == "__main__":
-    poll = Poll()
-    poll.fit()
-    '''keywords = Keywords()
+    poll = Poll(False)
+    poll.parse_poll()
+
+    print(poll.poll_frame)
+
+    '''poll.fit()
+    keywords = Keywords()
     keywords.fit()
     rel = Relevance()
     rel.fit()
     freq = Frequency_Table()
-    freq.fit()'''
-
+    freq.fit()
+'''
 
 
 

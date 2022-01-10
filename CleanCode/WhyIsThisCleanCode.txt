@@ -1,0 +1,13 @@
+In my code, I have tried to accommodate, among others, the following points:
+- No useless Code/Comments
+- No free floating variables, everything is packed into classes/functions
+- No repetition, if the same code is needed at different places, it was put in a function and called multiple times
+- Functions are not too long and fulfill only one task
+- Precise naming of variables
+- classes are build with uniform pattern
+- Information hiding by putting complex processes into functions with simple input and output
+- No magic numbers
+
+So far, I did not use docstrings to describe my classes and functions but I made use of
+pylint, which is a python library for checking you style and it pointed me to this. So I added
+docstrings for functions and classes.

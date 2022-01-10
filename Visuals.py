@@ -11,9 +11,9 @@ class Visuals:
         self.absolute_count = pd.read_csv(self.path + "/Data_Visuals/mentions_absolute")
         self.relative_count = pd.read_csv(self.path + "/Data_Visuals/mentions_relative")
         self.poll = pd.read_csv(self.path + "/Data_Visuals/polls")
-        self.parties = ["CDU/CSU","SPD","GRÜNE","LINKE","FDP","AFD"]
+        self.parties = ["CDU/CSU", "SPD", "GRÜNE", "LINKE", "FDP", "AFD"]
 
-    def individual_count(self, searchterm:str, relative:bool = True):
+    def individual_count(self, searchterm: str, relative: bool = True):
         if searchterm not in self.searchterms + self.parties:
             print("Searchterm is not valid. Please check spelling.")
             return

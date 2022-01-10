@@ -9,10 +9,14 @@ class Newscounter:
     def __init__(self):
         print("Initiate Newscounter...\n")
         self.path = os.getcwd() + "/Data/"
-        self.newscollection = pd.read_csv(self.path+"Newscollection/articles.csv")
-        self.searchterms = pd.read_csv(self.path+"Base_Data/searchterms")["searchterms"].to_list()
-        self.party_searchterms = pd.read_csv(self.path+"Base_Data/party_searchterms")
-        self.freq_table = pd.read_csv(self.path+"Base_Data/searchterm_mentions_count")
+        self.newscollection = \
+            pd.read_csv(self.path+"Newscollection/articles.csv")
+        self.searchterms = \
+            pd.read_csv(self.path+"Base_Data/searchterms")["searchterms"].to_list()
+        self.party_searchterms = \
+            pd.read_csv(self.path+"Base_Data/party_searchterms")
+        self.freq_table = \
+            pd.read_csv(self.path+"Base_Data/searchterm_mentions_count")
         self.newspaper = 0
         self.content = 3
         self.date = 6
@@ -37,7 +41,8 @@ class Newscounter:
                 print(name, count)
                 try:
                     self.freq_table.loc[
-                    (self.freq_table["date"] == date) & (self.freq_table["newspaper"] == newspaper), name] += count
+                        (self.freq_table["date"] == date) & (self.freq_table["newspaper"] == newspaper), name
+                        ] += count
                 except KeyError:
                     try:
                         self.freq_table.loc[
@@ -52,7 +57,7 @@ class Newscounter:
         self.freq_table.to_csv(self.path + "Base_Data/searchterm_mentions_count", index=False)
 
     def party_count(self):
-        self.party_dict = {k: v[v.notna()].to_dict() for k,v in self.party_searchterms.items()}
+        self.party_dict = {k: v[v.notna()].to_dict() for k, v in self.party_searchterms.items()}
         for party, searchterms in self.party_dict.items():
             self.party_dict[party] = self.freq_table.loc[:,searchterms.values()].sum(axis=1)
         self.party_frame = pd.concat([self.freq_table.loc[:,["date", "newspaper"]], pd.DataFrame.from_dict(self.party_dict)], axis=1)
@@ -100,16 +105,12 @@ class Newscounter:
             [self.absolute_table.loc[:, ["date", "newspaper"]], parties, individual_politicians], axis=1)
         self.relative_table.to_csv(self.path + "Data_Visuals/mentions_relative", index=False)
 
-
-
-
-
     def date_casting(self, df, earliest_date:str = "06.01.2021"):
         earliest_date = pendulum.parse(earliest_date, strict=False).format("YYYY-MM-DD")
         today = pendulum.now().format("YYYY-MM-DD")
         df["date"] = \
             df.apply(lambda row: pendulum.parse
-            (row["date"], strict=False).format("YYYY-MM-DD") if row["date"] != "No.Date" else "No.Date", axis=1)
+                (row["date"], strict=False).format("YYYY-MM-DD") if row["date"] != "No.Date" else "No.Date", axis=1)
         df.drop(df[df.date < earliest_date].index, inplace=True)
         df.drop(df[df.date > today].index, inplace=True)
         df.sort_values(by="date", axis=0, inplace=True, ignore_index=True)
@@ -126,4 +127,3 @@ class Newscounter:
 if __name__ == "__main__":
     counter = Newscounter()
     counter.fit()
-

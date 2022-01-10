@@ -117,6 +117,11 @@ class Newscounter:
         return df
 
     def fit(self):
+        '''
+        Clusters all functions and calls them in right order.
+
+        :return: Final poll data as .csv file
+        '''
         self.count()
         self.save_freq_count()
         self.party_count()

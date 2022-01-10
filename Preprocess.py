@@ -7,6 +7,13 @@ import numpy as np
 from flashtext import KeywordProcessor
 
 class Poll():
+    '''
+    Scrapes or loads poll data and saves it.
+
+    :param
+    refresh (bool): If true, new poll data is scraped, otherwise existing data is loaded.
+    path (str): path to current directory
+    '''
     ## Poll Data is retrieved from https://dawum.de/
     def __init__(self, refresh = True, path="None"):
         print("Load poll data...\n")
@@ -63,6 +70,11 @@ class Poll():
         self.surveys = self.poll_data["Surveys"]
 
     def parse_poll(self):
+        '''
+        Parses poll data and returns it as dataframe
+
+        :return: poll_frame (pd.DataFrame): dataframe containing poll results
+        '''
         party_to_number = {}
         number_to_parliament = {}
         number_to_institute = {}
@@ -122,19 +134,33 @@ class Poll():
         self.poll_frame = pd.DataFrame.from_dict(self.poll_dict)
 
     def select_relevant_polls(self):
-        # Start June 2021
+        '''
+        Excludes poll data from before June 2021
+
+        :return: reduced_poll_frame (pd.DataFrame): dataframe with poll data starting from June 2021
+        '''
         earliest_date = pendulum.parse("06.01.2021", strict=False).format("YYYY-MM-DD")
         self.poll_frame["published"] = self.poll_frame.apply(lambda row: pendulum.parse(row["published"], strict=False).format("YYYY-MM-DD"), axis=1)
         self.reduced_poll_frame = self.poll_frame[(self.poll_frame["published"] > earliest_date) & (self.poll_frame["parliament"] == "Bundestag")]
         self.reduced_poll_frame = self.reduced_poll_frame.drop(columns=['CDU', 'CSU'])
 
     def fit(self):
+        '''
+        Clusters all functions and calls them in right order.
+
+        :return: Final poll data as .csv file
+        '''
         self.parse_poll()
         self.select_relevant_polls()
         self.poll_frame.to_csv(self.path+"Base_Data/poll_table", index=False)
         self.reduced_poll_frame.to_csv(self.path + "Data_Visuals/polls", index=False)
 
 class Keywords():
+    '''
+    Creates list of keywords of politicians and parties
+
+    :param: path (str): path to current directory
+    '''
     def __init__(self, path="None"):
         print("Create searchterms...\n")
         self.path = os.getcwd()+"/Data/" if path=="None" else path
@@ -144,6 +170,11 @@ class Keywords():
         self.party_dict = {"CDU/CSU":[], "SPD":[], "GRÜNE":[], "FDP":[], "LINKE":[], "AFD":[]}
 
     def create_searchterms(self):
+        '''
+        Assigns searchterm to their respective political party.
+
+        :return: party_dict (dict): key is party name, value is list of respective searchterms.
+        '''
         manual_list = self.manual["Keyword"].to_list()
         abgeordnete_list = self.abgeordnete["Name"].to_list()
         party_list = self.abgeordnete["Fraktion"].to_list()
@@ -178,21 +209,37 @@ class Keywords():
 
 
     def save_searchterms(self):
+        '''
+        Saves searchterms as .csv file.
+        :return:
+        searchterms (csv): csv file of individual searchterms
+        party_searchterms (csv): csv file of searchterms for parties
+        '''
         pd.DataFrame({"searchterms": self.search_terms}).to_csv(
             self.path+"Base_Data/searchterms", index=False)
         pd.DataFrame(dict([(k, pd.Series(v)) for k, v in self.party_dict.items()])).to_csv(
             self.path+"Base_Data/party_searchterms", index=False)
 
     def fit(self):
+        '''
+        Clusters all functions and calls them in right order.
+
+        :return: Final poll data as .csv file
+        '''
         self.create_searchterms()
         self.save_searchterms()
 
 
 class Relevance:
+    '''
+    Searches newscorpus for articles that contain searchwords.
+
+    :param: path (str): path to current directory
+    '''
     def __init__(self, path="None"):
         self.path = os.getcwd()+"/Data/" if path=="None" else path
         ## Note that the newscollection is not uploaded to Github
-        ## Right now (4.11.2021) it contains 35.000 aricles
+        ## Right now (10.01.2022) it contains 92.087 aricles
         self.newscollection = pd.read_csv(self.path + "Newscollection/NewsCollection.csv")
         self.newscollection["Contains.Keyword"] = np.nan
         self.searchterms = pd.read_csv(self.path+"Base_Data/searchterms")["searchterms"].to_list()
@@ -202,10 +249,19 @@ class Relevance:
         self.keyword_processor.add_keywords_from_dict(self.searchterm_dict)
 
     def create_search_dict(self):
+        '''
+        Adds genitiv "s" to searchterms.
+        :return: searchterm_dict (dict): dictionary of searchterms and searchterms with genitiv "s".
+        '''
         for searchterm in self.searchterms:
             self.searchterm_dict[searchterm] = [searchterm, searchterm+"s"]
 
     def search(self):
+        '''
+        Searches newscorpus for articles containg at least one searchterm.
+
+        :return: newscollection (pd.DataFrame): dataframe containing all articles and marker if they contain a searchterm.
+        '''
         print("Select articles that contain searchterm...")
         for idx, article in enumerate(self.newscollection.itertuples(index=False, name=None)):
             if type(article[3]) is str:
@@ -219,15 +275,29 @@ class Relevance:
                 continue
 
     def save_checked_newcollection(self):
+        '''
+        Saves articles that contain at least one searchterm.
+
+        :return: articles (csv): csv file containing all articles that contain at least one searchterm.
+        '''
         self.newscollection[self.newscollection["Contains.Keyword"] == True].to_csv(
             self.path + "Newscollection/articles.csv", index=False)
 
     def fit(self):
+        '''
+        Clusters all functions and calls them in right order.
+
+        :return: Final poll data as .csv file
+        '''
         self.search()
         self.save_checked_newcollection()
 
 class Frequency_Table():
-    ### This should also work for sentiment
+    '''
+    Saves a csv file with proper shape for searchterm frequencies.
+
+    :param: path (str): path to current directory
+    '''
     def __init__(self, path="None"):
         print("Create empty frame for mentions count...\n")
         self.path = os.getcwd() + "/Data/" if path == "None" else path
@@ -237,6 +307,11 @@ class Frequency_Table():
         self.newspaper = pd.unique(self.newscollection["newspaper"])
 
     def compute_table_shape(self):
+        '''
+        Computes shape of csv file for searchterm frequency.
+
+        :return: frequency_table (pd.DataFrame): empty dataframe with right shape for saving searchterm frequency.
+        '''
         date_col = np.repeat(self.date, self.newspaper.shape[0])
         newspapers_col = np.tile(self.newspaper, self.date.shape[0])
         count_col = np.zeros(newspapers_col.shape[0])
@@ -249,9 +324,19 @@ class Frequency_Table():
         self.frequency_table = pd.DataFrame.from_dict(table)
 
     def save_table(self):
+        '''
+        Saves empty dataframe for searchterm frequencies.
+
+        :return: searchterm_mentions_count (csv): empty dataframe for searchterm frequencies
+        '''
         self.frequency_table.to_csv(self.path+"Base_Data/searchterm_mentions_count", index=False)
 
     def fit(self):
+        '''
+        Clusters all functions and calls them in right order.
+
+        :return: Final poll data as .csv file
+        '''
         self.compute_table_shape()
         self.save_table()
 

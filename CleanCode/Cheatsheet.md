@@ -11,7 +11,7 @@
 
 <span style="color:#6E25DB">Whenever you can put something in a function, put it in a function.</span>
 
-<span style="color:#6E25DB">**One function is responsible one task and not many.</span>
+<span style="color:#6E25DB">One function is responsible one task and not many.</span>
 
 
 <span style="color:#DB9418">**Different topic, different script**</span>

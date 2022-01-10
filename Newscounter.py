@@ -6,8 +6,6 @@ import pendulum
 
 
 class Newscounter:
-    #ToDo add for individual and party frequencies a csv empty and full so that full
-    # is always overwritten before refilled, otherwise mentions are counted twice.
     def __init__(self):
         print("Initiate Newscounter...\n")
         self.path = os.getcwd() + "/Data/"
@@ -67,11 +65,44 @@ class Newscounter:
         self.absolute_table = self.date_casting(self.absolute_table)
         self.absolute_table.to_csv(self.path + "Data_Visuals/mentions_absolute", index=False)
 
-    def relative_count(self):
-        relative_parties = (self.absolute_table.iloc[:,2:8].div(self.absolute_table.iloc[:,2:8].sum(axis=1), axis=0)*100).round(2).fillna(0)
-        relative_individuals = (self.absolute_table.iloc[:, 8:].div(self.absolute_table.iloc[:, 8:].sum(axis=1),axis=0) * 100).round(2).fillna(0)
-        self.relative_table = pd.concat([self.absolute_table.loc[:,["date", "newspaper"]], relative_parties, relative_individuals], axis=1)
+    def relative_count(self, who: str = "individual_politicians"):
+        def select(selection: str = "individual_politicians"):
+            if selection == "parties":
+                return True
+            else:
+                return False
+
+        def separate(parties: bool = False):
+            if parties:
+                # returns absolute counts for parties
+                return self.absolute_table.iloc[:, 2:8]
+            else:
+                # returns absolute counts for individual politicians
+                return self.absolute_table.iloc[:, 8:]
+
+        def sumof(separate, parties: bool = False):
+            return separate(parties).sum(axis=1)
+
+        def divideby(separate, parties: bool = False):
+            return separate(parties).div(sumof(separate, parties), axis=0)
+
+        def round_and_remove_missing_values(frame):
+            return frame.round(4).fillna(0)
+
+        clean = round_and_remove_missing_values
+        get_percentage = divideby
+        return clean(get_percentage(separate, select(who)))
+
+    def create_relative_frame(self):
+        parties = self.relative_count("parties")
+        individual_politicians = self.relative_count("individual_politicians")
+        self.relative_table = pd.concat(
+            [self.absolute_table.loc[:, ["date", "newspaper"]], parties, individual_politicians], axis=1)
         self.relative_table.to_csv(self.path + "Data_Visuals/mentions_relative", index=False)
+
+
+
+
 
     def date_casting(self, df, earliest_date:str = "06.01.2021"):
         earliest_date = pendulum.parse(earliest_date, strict=False).format("YYYY-MM-DD")
@@ -89,7 +120,7 @@ class Newscounter:
         self.save_freq_count()
         self.party_count()
         self.absolute_count()
-        self.relative_count()
+        self.create_relative_frame()
 
 
 if __name__ == "__main__":

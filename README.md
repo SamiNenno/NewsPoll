@@ -16,7 +16,7 @@ Compares news coverage of German politicians/parties to election polls.
 
 **3.** DDD If your domain is too small, invent other domains around and document these domains (as if you have 10 Mio € from Edlich-Investment!) Develop a clear strategic design with mappings/relationships with 5-0 Domains. It would be nice if these domains are derived from an Event-Storming (but not mandatory).
 
-**4.** Metrics at least two. Sonarcube would be great. Other non trivial metrics are also fine.
+**4.** Metrics at least two. Sonarcube would be great. Other non trivial metrics are also fine. -> See Metrics folder
 
 **5.** Clean Code Development: at least 5 points you can show me + >>10 points on your personal cheat sheet
 
@@ -36,7 +36,7 @@ Compares news coverage of German politicians/parties to election polls.
 **11.** Functional Programming (prove that you have covered all functional aspects in your code as
 
     - only final data structures
-    - (mostly) side effect free functions
-    - the use of higher-order functions
-    - functions as parameters and return values
-    - use closures / anonymous functions
+    - (mostly) side effect free functions -> See Newscounter.py "relative_count()"
+    - the use of higher-order functions -> See Newscounter.py "relative_count()"
+    - functions as parameters and return values -> See Newscounter.py "relative_count()"
+    - use closures / anonymous functions -> See Lambda Function in Newscounter.py "datecasting()"

@@ -226,10 +226,8 @@ class Relevance:
         self.search()
         self.save_checked_newcollection()
 
-
-
 class Frequency_Table():
-    ### This should also work fpr sentiment
+    ### This should also work for sentiment
     def __init__(self, path="None"):
         print("Create empty frame for mentions count...\n")
         self.path = os.getcwd() + "/Data/" if path == "None" else path
@@ -259,19 +257,14 @@ class Frequency_Table():
 
 
 if __name__ == "__main__":
-    poll = Poll(False)
-    poll.parse_poll()
-
-    print(poll.poll_frame)
-
-    '''poll.fit()
+    poll = Poll()
+    poll.fit()
     keywords = Keywords()
     keywords.fit()
     rel = Relevance()
     rel.fit()
     freq = Frequency_Table()
     freq.fit()
-'''
 
 
 

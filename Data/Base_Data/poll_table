@@ -1,12 +1,54 @@
 published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,LINKE,AFD,SONSTIGE
+2022-01-08,2022-01-03,2022-01-07,1504,Bundestag,INSA,27.0,23,No.Result,No.Result,16.0,12,5,11.0,6.0
+2022-01-06,2022-01-03,2022-01-05,1325,Bundestag,Infratest dimap,26.0,23,No.Result,No.Result,16.0,11,5,11.0,8.0
+2022-01-05,2021-12-29,2022-01-03,1005,Bayern,GMS,14.0,No.Result,No.Result,35,15.0,9,2,10.0,6.0
+2022-01-04,2021-12-29,2022-01-03,1003,Bundestag,GMS,26.0,24,No.Result,No.Result,16.0,12,4,11.0,7.0
+2022-01-03,2021-12-30,2022-01-03,2060,Bundestag,INSA,26.5,23,No.Result,No.Result,15.5,11,6,11.5,6.5
+2022-01-01,2021-12-27,2021-12-30,1201,Bundestag,INSA,27.0,24,No.Result,No.Result,16.0,10,5,11.0,7.0
+2021-12-30,2021-12-23,2021-12-30,1002,Baden-Württemberg,Institut Wahlkreisprognose,20.0,No.Result,19,No.Result,26.0,19,3,8.5,4.5
+2021-12-27,2021-12-14,2021-12-16,1436,Bundestag,Kantar (Emnid),27.0,22,No.Result,No.Result,16.0,11,5,11.0,8.0
+2021-12-26,2021-12-20,2021-12-23,1195,Bundestag,INSA,28.0,23,No.Result,No.Result,15.0,11,5,11.0,7.0
+2021-12-24,2021-12-15,2021-12-24,1004,Saarland,Institut Wahlkreisprognose,38.0,No.Result,33.5,No.Result,6.0,6,4,7.0,2.5
+2021-12-22,2021-12-12,2021-12-20,1210,Nordrhein-Westfalen (NRW),Institut Wahlkreisprognose,28.0,No.Result,29,No.Result,15.0,12,3,7.0,6.0
+2021-12-22,2021-12-01,2021-12-15,1069,Bundestag,Allensbach,26.0,24,No.Result,No.Result,15.0,13,5,10.5,6.5
+2021-12-21,2021-12-14,2021-12-20,2501,Bundestag,Forsa,26.0,24,No.Result,No.Result,16.0,10,5,9.0,10.0
+2021-12-20,2021-12-17,2021-12-20,2075,Bundestag,INSA,27.5,21.5,No.Result,No.Result,14.5,13,5.5,11.5,6.5
+2021-12-20,2021-12-09,2021-12-17,1008,Brandenburg,Forsa,28.0,No.Result,14,No.Result,11.0,6,11,17.0,5.0
+2021-12-19,2021-12-13,2021-12-18,1501,Bundestag,INSA,27.0,23,No.Result,No.Result,14.0,12,5,12.0,7.0
+2021-12-19,2021-12-18,2021-12-19,1120,Bundestag,Institut Wahlkreisprognose,30.0,21.5,No.Result,No.Result,14.5,11.5,4,10.0,8.5
+2021-12-18,2021-12-08,2021-12-14,1440,Bundestag,Kantar (Emnid),27.0,22,No.Result,No.Result,16.0,11,5,10.0,9.0
+2021-12-17,2021-12-10,2021-12-14,1715,Bundestag,YouGov,27.0,23,No.Result,No.Result,16.0,10,6,11.0,6.0
+2021-12-15,2021-12-08,2021-12-14,1430,Bayern,Institut Wahlkreisprognose,16.5,No.Result,No.Result,33.5,16.5,8,2,8.0,4.5
+2021-12-15,2021-11-26,2021-12-07,2009,Nordrhein-Westfalen (NRW),Forsa,27.0,No.Result,27,No.Result,17.0,12,4,7.0,6.0
+2021-12-14,2021-12-06,2021-12-13,1000,Berlin,INSA,22.0,No.Result,19,No.Result,20.0,7,15,9.0,8.0
+2021-12-14,2021-12-07,2021-12-13,2509,Bundestag,Forsa,26.0,23,No.Result,No.Result,15.0,11,5,10.0,10.0
+2021-12-14,2021-12-10,2021-12-13,2221,Bundestag,INSA,27.0,22,No.Result,No.Result,14.5,13,5.5,11.5,6.5
+2021-12-13,2021-12-02,2021-12-13,1030,Schleswig-Holstein,Institut Wahlkreisprognose,29.0,No.Result,24,No.Result,20.0,12.5,2,4.0,4.0
+2021-12-11,2021-12-06,2021-12-10,1480,Bundestag,INSA,26.0,22,No.Result,No.Result,15.0,13,5,11.0,8.0
+2021-12-11,2021-12-01,2021-12-07,1439,Bundestag,Kantar (Emnid),28.0,21,No.Result,No.Result,15.0,11,5,11.0,6.0
+2021-12-10,2021-12-07,2021-12-09,1303,Bundestag,Forschungsgruppe Wahlen,28.0,21,No.Result,No.Result,17.0,12,5,10.0,7.0
+2021-12-09,2021-12-07,2021-12-08,1266,Bundestag,Infratest dimap,26.0,23,No.Result,No.Result,16.0,12,5,11.0,7.0
+2021-12-08,2021-12-01,2021-12-08,10043,Bundestag,Civey,27.0,23,No.Result,No.Result,15.0,11,5,11.0,8.0
+2021-12-07,2021-11-30,2021-12-06,2503,Bundestag,Forsa,25.0,22,No.Result,No.Result,17.0,11,5,10.0,10.0
+2021-12-06,2021-12-01,2021-12-06,1002,Bundestag,Institut Wahlkreisprognose,29.0,18,No.Result,No.Result,16.5,13.5,4,11.0,8.0
+2021-12-06,2021-12-03,2021-12-06,2119,Bundestag,INSA,26.0,22,No.Result,No.Result,15.0,13.5,5.5,11.5,6.5
+2021-12-04,2021-11-24,2021-11-30,1425,Bundestag,Kantar (Emnid),27.0,20,No.Result,No.Result,16.0,12,6,11.0,8.0
+2021-12-04,2021-11-29,2021-12-03,1348,Bundestag,INSA,26.0,21,No.Result,No.Result,15.0,13,5,12.0,8.0
+2021-12-04,2021-11-26,2021-12-02,1000,Hessen,Institut Wahlkreisprognose,24.5,No.Result,21.5,No.Result,18.5,13,5,9.0,5.5
+2021-12-03,2021-11-24,2021-11-30,1000,Thüringen,INSA,18.0,No.Result,15,No.Result,7.0,7,24,23.0,6.0
+2021-12-02,2021-11-29,2021-12-01,1316,Bundestag,Infratest dimap,25.0,23,No.Result,No.Result,17.0,12,5,11.0,7.0
+2021-12-01,2021-11-24,2021-12-01,10078,Bundestag,Civey,26.0,24,No.Result,No.Result,15.0,11,5,11.0,8.0
+2021-11-30,2021-11-23,2021-11-29,2509,Bundestag,Forsa,24.0,22,No.Result,No.Result,17.0,12,5,10.0,10.0
+2021-11-29,2021-11-26,2021-11-29,2129,Bundestag,INSA,25.0,21,No.Result,No.Result,16.0,14,5.5,11.0,7.5
 2021-11-28,2021-11-22,2021-11-26,1403,Bundestag,INSA,26.0,21,No.Result,No.Result,15.0,13,6,12.0,7.0
+2021-11-28,2021-11-24,2021-11-28,1400,Nordrhein-Westfalen (NRW),Institut Wahlkreisprognose,28.0,No.Result,25,No.Result,16.0,13.5,4,8.5,5.0
 2021-11-27,2021-11-17,2021-11-23,1424,Bundestag,Kantar (Emnid),24.0,22,No.Result,No.Result,18.0,11,6,11.0,8.0
 2021-11-26,2021-11-19,2021-11-23,1797,Bundestag,YouGov,25.0,23,No.Result,No.Result,16.0,11,6,12.0,5.0
 2021-11-26,2021-11-23,2021-11-25,1344,Bundestag,Forschungsgruppe Wahlen,28.0,19,No.Result,No.Result,17.0,13,5,11.0,7.0
 2021-11-25,2021-11-23,2021-11-24,1239,Bundestag,Infratest dimap,25.0,21,No.Result,No.Result,17.0,13,5,11.0,8.0
 2021-11-25,2021-11-19,2021-11-23,1172,Rheinland-Pfalz,Infratest dimap,34.0,No.Result,21,No.Result,12.0,11,No.Result,8.0,8.0
 2021-11-24,2021-11-17,2021-11-24,10064,Bundestag,Civey,25.0,24,No.Result,No.Result,15.0,11,5,11.0,9.0
-2021-11-24,2021-11-22,2021-11-24,1002,Bundestag,Wahlkreisprognose.de,27.0,22.5,No.Result,No.Result,15.5,11.5,5,10.0,8.5
+2021-11-24,2021-11-22,2021-11-24,1002,Bundestag,Institut Wahlkreisprognose,27.0,22.5,No.Result,No.Result,15.5,11.5,5,10.0,8.5
 2021-11-24,2021-11-15,2021-11-22,1001,Schleswig-Holstein,INSA,28.0,No.Result,21,No.Result,18.0,14,4,7.0,3.0
 2021-11-24,2021-11-16,2021-11-20,1165,Saarland,Infratest dimap,33.0,No.Result,28,No.Result,8.0,8,6,9.0,8.0
 2021-11-23,2021-11-16,2021-11-22,2501,Bundestag,Forsa,24.0,22,No.Result,No.Result,17.0,12,5,10.0,10.0
@@ -21,10 +63,10 @@ published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,
 2021-11-14,2021-11-08,2021-11-12,1202,Bundestag,INSA,26.0,22,No.Result,No.Result,15.0,13,5,11.0,8.0
 2021-11-13,2021-11-03,2021-11-09,1423,Bundestag,Kantar (Emnid),25.0,21,No.Result,No.Result,16.0,14,6,10.0,8.0
 2021-11-12,2021-11-09,2021-11-11,1257,Bundestag,Forschungsgruppe Wahlen,28.0,20,No.Result,No.Result,16.0,13,5,11.0,7.0
-2021-11-10,2021-11-01,2021-11-09,1100,Rheinland-Pfalz,Wahlkreisprognose.de,41.0,No.Result,20,No.Result,9.5,7.5,1.5,8.0,4.5
+2021-11-10,2021-11-01,2021-11-09,1100,Rheinland-Pfalz,Institut Wahlkreisprognose,41.0,No.Result,20,No.Result,9.5,7.5,1.5,8.0,4.5
 2021-11-09,2021-11-02,2021-11-08,2502,Bundestag,Forsa,25.0,22,No.Result,No.Result,16.0,14,5,9.0,9.0
 2021-11-09,2021-11-05,2021-11-08,2112,Bundestag,INSA,26.5,20.5,No.Result,No.Result,16.0,13.5,5.5,10.5,7.5
-2021-11-07,2021-10-31,2021-11-05,1200,Bundestag,Wahlkreisprognose.de,28.0,20.5,No.Result,No.Result,15.5,14,4,10.5,7.5
+2021-11-07,2021-10-31,2021-11-05,1200,Bundestag,Institut Wahlkreisprognose,28.0,20.5,No.Result,No.Result,15.5,14,4,10.5,7.5
 2021-11-06,2021-10-27,2021-11-02,1417,Bundestag,Kantar (Emnid),25.0,22,No.Result,No.Result,16.0,13,5,10.0,6.0
 2021-11-06,2021-11-01,2021-11-05,1212,Bundestag,INSA,27.0,21,No.Result,No.Result,15.0,14,5,11.0,7.0
 2021-11-05,2021-11-01,2021-11-04,1005,Bundestag,GMS,26.0,21,No.Result,No.Result,16.0,15,4,10.0,8.0
@@ -33,13 +75,13 @@ published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,
 2021-11-02,2021-10-29,2021-11-01,2140,Bundestag,INSA,27.0,20,No.Result,No.Result,16.0,13.5,5,11.5,7.0
 2021-11-02,2021-10-26,2021-11-01,2501,Bundestag,Forsa,25.0,21,No.Result,No.Result,16.0,15,5,9.0,9.0
 2021-10-31,2021-10-25,2021-10-29,1503,Bundestag,INSA,27.0,21,No.Result,No.Result,16.0,13,5,11.0,7.0
-2021-10-31,2021-10-26,2021-10-31,1009,Nordrhein-Westfalen (NRW),Wahlkreisprognose.de,30.0,No.Result,27,No.Result,16.0,14,3,5.0,5.0
+2021-10-31,2021-10-26,2021-10-31,1009,Nordrhein-Westfalen (NRW),Institut Wahlkreisprognose,30.0,No.Result,27,No.Result,16.0,14,3,5.0,5.0
 2021-10-30,2021-10-19,2021-10-26,1422,Bundestag,Kantar (Emnid),25.0,21,No.Result,No.Result,17.0,14,5,11.0,7.0
 2021-10-29,2021-10-26,2021-10-28,1208,Bundestag,Forschungsgruppe Wahlen,27.0,20,No.Result,No.Result,16.0,14,5,11.0,7.0
 2021-10-28,2021-10-26,2021-10-27,1239,Bundestag,Infratest dimap,26.0,22,No.Result,No.Result,16.0,13,4,10.0,9.0
 2021-10-27,2021-10-20,2021-10-27,10050,Bundestag,Civey,25.0,21,No.Result,No.Result,15.0,14,5,12.0,8.0
 2021-10-26,2021-10-19,2021-10-25,2510,Bundestag,Forsa,25.0,20,No.Result,No.Result,17.0,16,5,9.0,8.0
-2021-10-26,2021-10-14,2021-10-24,945,Schleswig-Holstein,Wahlkreisprognose.de,29.0,No.Result,23,No.Result,22.0,14,2,3.0,3.0
+2021-10-26,2021-10-14,2021-10-24,945,Schleswig-Holstein,Institut Wahlkreisprognose,29.0,No.Result,23,No.Result,22.0,14,2,3.0,3.0
 2021-10-25,2021-10-22,2021-10-25,2105,Bundestag,INSA,28.0,20,No.Result,No.Result,16.0,14,5,11.0,6.0
 2021-10-24,2021-10-18,2021-10-22,1205,Bundestag,INSA,27.0,20,No.Result,No.Result,17.0,14,4,11.0,7.0
 2021-10-24,2021-10-18,2021-10-21,1172,Nordrhein-Westfalen (NRW),Infratest dimap,31.0,No.Result,22,No.Result,17.0,13,3,7.0,7.0
@@ -51,13 +93,13 @@ published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,
 2021-10-20,2021-10-01,2021-10-14,1045,Bundestag,Allensbach,28.0,21,No.Result,No.Result,15.0,14,5,9.5,7.5
 2021-10-19,2021-10-12,2021-10-18,2502,Bundestag,Forsa,26.0,20,No.Result,No.Result,16.0,15,5,9.0,9.0
 2021-10-18,2021-10-15,2021-10-18,2140,Bundestag,INSA,28.0,18.5,No.Result,No.Result,16.0,15,5,11.5,6.0
-2021-10-16,2021-10-07,2021-10-14,980,Brandenburg,Wahlkreisprognose.de,32.0,No.Result,9,No.Result,9.5,7,7,19.5,6.5
+2021-10-16,2021-10-07,2021-10-14,980,Brandenburg,Institut Wahlkreisprognose,32.0,No.Result,9,No.Result,9.5,7,7,19.5,6.5
 2021-10-16,2021-10-11,2021-10-15,1195,Bundestag,INSA,28.0,19,No.Result,No.Result,16.0,13,4,11.0,9.0
 2021-10-15,2021-10-12,2021-10-14,1329,Bundestag,Forschungsgruppe Wahlen,28.0,19,No.Result,No.Result,17.0,13,5,11.0,7.0
 2021-10-14,2021-10-06,2021-10-12,1410,Bundestag,Kantar (Emnid),26.0,19,No.Result,No.Result,17.0,14,5,10.0,9.0
 2021-10-14,2021-10-07,2021-10-12,1162,Baden-Württemberg,Infratest dimap,20.0,No.Result,17,No.Result,27.0,15,3,9.0,6.0
 2021-10-13,2021-10-06,2021-10-13,10013,Bundestag,Civey,26.0,20,No.Result,No.Result,14.0,15,6,11.0,8.0
-2021-10-13,2021-10-05,2021-10-12,1002,Sachsen,Wahlkreisprognose.de,19.0,No.Result,22,No.Result,9.0,10,7,25.5,7.5
+2021-10-13,2021-10-05,2021-10-12,1002,Sachsen,Institut Wahlkreisprognose,19.0,No.Result,22,No.Result,9.0,10,7,25.5,7.5
 2021-10-12,2021-10-04,2021-10-11,1000,Bayern,INSA,20.0,No.Result,No.Result,32,15.0,11,2,8.0,4.0
 2021-10-12,2021-10-04,2021-10-11,1000,Baden-Württemberg,INSA,21.0,No.Result,20,No.Result,24.0,16,3,9.0,7.0
 2021-10-12,2021-10-04,2021-10-11,1000,Nordrhein-Westfalen (NRW),INSA,33.0,No.Result,20,No.Result,13.0,15,4,8.0,7.0
@@ -73,9 +115,9 @@ published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,
 2021-10-01,2021-09-28,2021-09-30,1249,Bundestag,Forschungsgruppe Wahlen,28.0,20,No.Result,No.Result,16.0,13,5,10.0,8.0
 2021-09-24,2021-09-22,2021-09-24,1000,Berlin,INSA,23.0,No.Result,15,No.Result,17.0,8,14,11.0,6.0
 2021-09-24,2021-09-20,2021-09-24,1058,Mecklenburg-Vorpommern,INSA,40.0,No.Result,13,No.Result,7.0,5,11,17.0,7.0
-2021-09-24,2021-09-18,2021-09-23,1004,Mecklenburg-Vorpommern,Wahlkreisprognose.de,40.0,No.Result,13.5,No.Result,6.0,5,10,16.0,9.5
-2021-09-24,2021-09-22,2021-09-23,1040,Berlin,Wahlkreisprognose.de,25.0,No.Result,15.5,No.Result,15.0,7.5,14.5,10.0,12.5
-2021-09-24,2021-09-22,2021-09-24,1400,Bundestag,Wahlkreisprognose.de,25.5,22.5,No.Result,No.Result,14.0,12,7,11.0,8.0
+2021-09-24,2021-09-18,2021-09-23,1004,Mecklenburg-Vorpommern,Institut Wahlkreisprognose,40.0,No.Result,13.5,No.Result,6.0,5,10,16.0,9.5
+2021-09-24,2021-09-22,2021-09-23,1040,Berlin,Institut Wahlkreisprognose,25.0,No.Result,15.5,No.Result,15.0,7.5,14.5,10.0,12.5
+2021-09-24,2021-09-22,2021-09-24,1400,Bundestag,Institut Wahlkreisprognose,25.5,22.5,No.Result,No.Result,14.0,12,7,11.0,8.0
 2021-09-24,2021-09-16,2021-09-23,1554,Bundestag,Allensbach,26.0,25,No.Result,No.Result,16.0,10.5,5,10.0,7.5
 2021-09-24,2021-09-20,2021-09-23,2002,Bundestag,Forsa,25.0,22,No.Result,No.Result,17.0,12,6,10.0,5.0
 2021-09-24,2021-09-22,2021-09-23,2000,Bundestag,Ipsos,26.0,22,No.Result,No.Result,16.0,12,7,11.0,6.0
@@ -87,7 +129,7 @@ published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,
 2021-09-23,2021-09-15,2021-09-21,1433,Bundestag,Kantar (Emnid),25.0,21,No.Result,No.Result,16.0,11,7,11.0,9.0
 2021-09-23,2021-09-16,2021-09-22,2364,Bundestag,YouGov,25.0,21,No.Result,No.Result,14.0,11,7,12.0,7.0
 2021-09-23,2021-09-16,2021-09-23,1001,Mecklenburg-Vorpommern,Civey,39.0,No.Result,13,No.Result,5.0,8,11,18.0,6.0
-2021-09-21,2021-09-20,2021-09-21,1801,Bundestag,Wahlkreisprognose.de,25.0,21.5,No.Result,No.Result,15.0,12.5,6.5,11.0,8.5
+2021-09-21,2021-09-20,2021-09-21,1801,Bundestag,Institut Wahlkreisprognose,25.0,21.5,No.Result,No.Result,15.0,12.5,6.5,11.0,8.5
 2021-09-21,2021-09-13,2021-09-16,1097,Bundestag,Trend Research Hamburg,27.0,22,No.Result,No.Result,15.0,11,7,11.0,8.0
 2021-09-21,2021-09-14,2021-09-20,2502,Bundestag,Forsa,25.0,22,No.Result,No.Result,17.0,11,6,11.0,5.0
 2021-09-20,2021-09-17,2021-09-20,2054,Bundestag,INSA,25.0,22,No.Result,No.Result,15.0,12,6.5,11.0,8.5
@@ -99,17 +141,17 @@ published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,
 2021-09-17,2021-09-10,2021-09-16,1064,Mecklenburg-Vorpommern,INSA,40.0,No.Result,12,No.Result,7.0,6,11,18.0,6.0
 2021-09-17,2021-09-13,2021-09-16,1028,Mecklenburg-Vorpommern,Forschungsgruppe Wahlen,38.0,No.Result,15,No.Result,6.0,6,11,17.0,7.0
 2021-09-17,2021-09-13,2021-09-16,1000,Berlin,Forschungsgruppe Wahlen,21.0,No.Result,17,No.Result,20.0,8,12,9.0,13.0
-2021-09-16,2021-09-13,2021-09-15,1400,Bundestag,Wahlkreisprognose.de,27.0,20,No.Result,No.Result,15.0,12.5,6.5,11.0,8.0
+2021-09-16,2021-09-13,2021-09-15,1400,Bundestag,Institut Wahlkreisprognose,27.0,20,No.Result,No.Result,15.0,12.5,6.5,11.0,8.0
 2021-09-16,2021-09-13,2021-09-15,1512,Bundestag,Infratest dimap,26.0,22,No.Result,No.Result,15.0,11,6,11.0,6.0
 2021-09-16,2021-09-08,2021-09-14,1543,Bundestag,Kantar (Emnid),26.0,20,No.Result,No.Result,17.0,11,6,12.0,8.0
 2021-09-16,2021-09-09,2021-09-14,1816,Bundestag,YouGov,25.0,20,No.Result,No.Result,15.0,10,8,11.0,7.0
 2021-09-15,2021-09-08,2021-09-15,10029,Bundestag,Civey,25.0,23,No.Result,No.Result,17.0,12,6,10.0,7.0
-2021-09-14,2021-09-09,2021-09-14,1553,Berlin,Wahlkreisprognose.de,25.0,No.Result,14.5,No.Result,14.5,8.5,14.5,10.5,12.5
+2021-09-14,2021-09-09,2021-09-14,1553,Berlin,Institut Wahlkreisprognose,25.0,No.Result,14.5,No.Result,14.5,8.5,14.5,10.5,12.5
 2021-09-14,2021-09-08,2021-09-13,1003,Bundestag,GMS,25.0,23,No.Result,No.Result,16.0,13,6,11.0,6.0
 2021-09-14,2021-09-07,2021-09-13,2501,Bundestag,Forsa,25.0,21,No.Result,No.Result,17.0,11,6,11.0,6.0
 2021-09-13,2021-09-10,2021-09-13,2063,Bundestag,INSA,26.0,20.5,No.Result,No.Result,15.0,12.5,6.5,11.5,8.0
 2021-09-12,2021-09-06,2021-09-10,1152,Bundestag,INSA,26.0,20,No.Result,No.Result,15.0,13,6,11.0,9.0
-2021-09-10,2021-09-04,2021-09-09,994,Mecklenburg-Vorpommern,Wahlkreisprognose.de,39.0,No.Result,13,No.Result,5.5,6,11,18.0,7.5
+2021-09-10,2021-09-04,2021-09-09,994,Mecklenburg-Vorpommern,Institut Wahlkreisprognose,39.0,No.Result,13,No.Result,5.5,6,11,18.0,7.5
 2021-09-10,2021-09-03,2021-09-10,2043,Berlin,Civey,25.0,No.Result,16,No.Result,15.0,7,16,9.0,12.0
 2021-09-10,2021-09-07,2021-09-09,1281,Bundestag,Forschungsgruppe Wahlen,25.0,22,No.Result,No.Result,17.0,11,6,11.0,5.0
 2021-09-10,2021-09-03,2021-09-07,1700,Bundestag,YouGov,26.0,21,No.Result,No.Result,15.0,10,6,12.0,10.0
@@ -117,7 +159,7 @@ published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,
 2021-09-09,2021-09-02,2021-09-07,1160,Rheinland-Pfalz,Infratest dimap,40.0,No.Result,23,No.Result,9.0,6,3,8.0,6.0
 2021-09-09,2021-09-02,2021-09-07,1180,Mecklenburg-Vorpommern,Infratest dimap,39.0,No.Result,14,No.Result,6.0,7,10,17.0,7.0
 2021-09-08,2021-08-31,2021-09-08,10082,Bundestag,Civey,25.0,23,No.Result,No.Result,17.0,11,6,11.0,7.0
-2021-09-08,2021-09-06,2021-09-08,1208,Bundestag,Wahlkreisprognose.de,28.0,19,No.Result,No.Result,14.0,12,6,11.0,10.0
+2021-09-08,2021-09-06,2021-09-08,1208,Bundestag,Institut Wahlkreisprognose,28.0,19,No.Result,No.Result,14.0,12,6,11.0,10.0
 2021-09-08,2021-09-01,2021-09-07,1258,Bundestag,Allensbach,27.0,25,No.Result,No.Result,15.5,9.5,6,11.0,6.0
 2021-09-08,2021-08-30,2021-09-02,1065,Bundestag,Trend Research Hamburg,26.0,20,No.Result,No.Result,15.0,13,7,12.0,7.0
 2021-09-07,2021-09-01,2021-09-06,1004,Bundestag,GMS,25.0,23,No.Result,No.Result,17.0,12,6,11.0,6.0
@@ -130,7 +172,7 @@ published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,
 2021-09-02,2021-08-25,2021-08-31,1439,Bundestag,Kantar (Emnid),25.0,21,No.Result,No.Result,19.0,11,7,11.0,6.0
 2021-09-01,2021-08-25,2021-09-01,10032,Bundestag,Civey,25.0,23,No.Result,No.Result,18.0,11,6,10.0,7.0
 2021-09-01,2021-08-25,2021-08-30,1157,Brandenburg,Infratest dimap,34.0,No.Result,13,No.Result,8.0,7,9,17.0,5.0
-2021-08-31,2021-08-30,2021-08-31,2340,Bundestag,Wahlkreisprognose.de,27.0,19.5,No.Result,No.Result,15.5,13,6.5,10.5,8.0
+2021-08-31,2021-08-30,2021-08-31,2340,Bundestag,Institut Wahlkreisprognose,27.0,19.5,No.Result,No.Result,15.5,13,6.5,10.5,8.0
 2021-08-31,2021-08-28,2021-08-29,2001,Bundestag,Ipsos,25.0,21,No.Result,No.Result,19.0,11,7,11.0,6.0
 2021-08-31,2021-08-24,2021-08-30,2508,Bundestag,Forsa,23.0,21,No.Result,No.Result,18.0,12,6,11.0,9.0
 2021-08-30,2021-08-27,2021-08-30,2015,Bundestag,INSA,25.0,20,No.Result,No.Result,16.5,13.5,7,11.0,7.0
@@ -138,10 +180,10 @@ published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,
 2021-08-28,2021-08-23,2021-08-27,1247,Bundestag,INSA,24.0,21,No.Result,No.Result,17.0,13,6,11.0,8.0
 2021-08-27,2021-08-20,2021-08-24,1689,Bundestag,YouGov,24.0,22,No.Result,No.Result,16.0,13,8,11.0,7.0
 2021-08-27,2021-08-24,2021-08-26,1300,Bundestag,Forschungsgruppe Wahlen,22.0,22,No.Result,No.Result,20.0,10,6,11.0,6.0
-2021-08-26,2021-08-16,2021-08-26,1002,Niedersachsen,Wahlkreisprognose.de,39.0,No.Result,20,No.Result,17.0,11,4,5.0,4.0
+2021-08-26,2021-08-16,2021-08-26,1002,Niedersachsen,Institut Wahlkreisprognose,39.0,No.Result,20,No.Result,17.0,11,4,5.0,4.0
 2021-08-26,2021-08-18,2021-08-24,1919,Bundestag,Kantar (Emnid),23.0,23,No.Result,No.Result,18.0,12,7,11.0,6.0
 2021-08-26,2021-08-19,2021-08-24,1153,Mecklenburg-Vorpommern,Infratest dimap,36.0,No.Result,15,No.Result,6.0,8,11,17.0,7.0
-2021-08-25,2021-08-23,2021-08-24,1050,Berlin,Wahlkreisprognose.de,24.5,No.Result,15,No.Result,15.5,9.5,15,11.0,9.5
+2021-08-25,2021-08-23,2021-08-24,1050,Berlin,Institut Wahlkreisprognose,24.5,No.Result,15,No.Result,15.5,9.5,15,11.0,9.5
 2021-08-25,2021-08-12,2021-08-18,1096,Bundestag,Trend Research Hamburg,21.0,23,No.Result,No.Result,17.0,13,7,12.0,8.0
 2021-08-25,2021-08-18,2021-08-21,1160,Berlin,Infratest dimap,23.0,No.Result,19,No.Result,17.0,8,12,11.0,10.0
 2021-08-25,2021-08-18,2021-08-25,10054,Bundestag,Civey,22.0,22,No.Result,No.Result,18.0,12,7,12.0,7.0
@@ -154,7 +196,7 @@ published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,
 2021-08-19,2021-08-05,2021-08-17,1018,Bundestag,Allensbach,19.5,27.5,No.Result,No.Result,17.5,11,7.5,11.0,6.0
 2021-08-19,2021-08-11,2021-08-17,1920,Bundestag,Kantar (Emnid),21.0,22,No.Result,No.Result,19.0,12,7,11.0,8.0
 2021-08-18,2021-08-11,2021-08-18,10117,Bundestag,Civey,19.0,24,No.Result,No.Result,20.0,12,7,11.0,7.0
-2021-08-18,2021-08-14,2021-08-17,2005,Bundestag,Wahlkreisprognose.de,22.0,22,No.Result,No.Result,17.5,11,7,11.0,9.5
+2021-08-18,2021-08-14,2021-08-17,2005,Bundestag,Institut Wahlkreisprognose,22.0,22,No.Result,No.Result,17.5,11,7,11.0,9.5
 2021-08-18,2021-08-10,2021-08-16,2501,Bundestag,Forsa,21.0,23,No.Result,No.Result,19.0,12,6,10.0,9.0
 2021-08-16,2021-08-02,2021-08-09,1001,Sachsen,INSA,8.0,No.Result,34,No.Result,7.0,8,13,25.0,5.0
 2021-08-16,2021-08-13,2021-08-16,2080,Bundestag,INSA,20.0,25,No.Result,No.Result,17.5,12.5,6.5,11.0,7.5
@@ -175,7 +217,7 @@ published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,
 2021-08-03,2021-07-21,2021-07-31,2002,Bundestag,Ipsos,18.0,27,No.Result,No.Result,20.0,10,7,11.0,7.0
 2021-08-02,2021-07-30,2021-08-02,2080,Bundestag,INSA,18.0,27.5,No.Result,No.Result,18.0,13,7,11.0,5.5
 2021-08-01,2021-07-26,2021-07-30,1196,Bundestag,INSA,17.0,27,No.Result,No.Result,18.0,13,6,11.0,8.0
-2021-07-31,2021-07-24,2021-07-31,2420,Berlin,Wahlkreisprognose.de,24.0,No.Result,18,No.Result,15.5,9,15,9.0,9.5
+2021-07-31,2021-07-24,2021-07-31,2420,Berlin,Institut Wahlkreisprognose,24.0,No.Result,18,No.Result,15.5,9,15,9.0,9.5
 2021-07-30,2021-07-20,2021-07-27,1441,Bundestag,Kantar (Emnid),17.0,27,No.Result,No.Result,19.0,13,6,11.0,7.0
 2021-07-30,2021-07-27,2021-07-29,1268,Bundestag,Forschungsgruppe Wahlen,16.0,28,No.Result,No.Result,21.0,10,7,11.0,4.0
 2021-07-30,2021-07-23,2021-07-26,1748,Bundestag,YouGov,16.0,28,No.Result,No.Result,16.0,12,8,12.0,8.0
@@ -189,7 +231,7 @@ published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,
 2021-07-25,2021-07-16,2021-07-22,1098,Mecklenburg-Vorpommern,INSA,26.0,No.Result,20,No.Result,9.0,7,13,19.0,6.0
 2021-07-25,2021-07-19,2021-07-23,1316,Bundestag,INSA,17.0,27,No.Result,No.Result,18.0,13,7,11.0,7.0
 2021-07-23,2021-07-14,2021-07-20,1421,Bundestag,Kantar (Emnid),16.0,28,No.Result,No.Result,19.0,12,7,11.0,7.0
-2021-07-22,2021-07-14,2021-07-21,2000,Mecklenburg-Vorpommern,Wahlkreisprognose.de,30.0,No.Result,24,No.Result,5.0,5,9,20.0,7.0
+2021-07-22,2021-07-14,2021-07-21,2000,Mecklenburg-Vorpommern,Institut Wahlkreisprognose,30.0,No.Result,24,No.Result,5.0,5,9,20.0,7.0
 2021-07-22,2021-07-20,2021-07-21,1188,Bundestag,Infratest dimap,16.0,29,No.Result,No.Result,19.0,12,6,10.0,8.0
 2021-07-21,2021-07-05,2021-07-19,1048,Saarland,INSA,27.0,No.Result,36,No.Result,9.0,7,7,6.0,8.0
 2021-07-21,2021-07-12,2021-07-19,1000,Bayern,INSA,10.0,No.Result,No.Result,37,21.0,8,3,8.0,3.0
@@ -208,7 +250,7 @@ published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,
 2021-07-12,2021-07-09,2021-07-12,2087,Bundestag,INSA,17.0,28,No.Result,No.Result,17.0,12.5,7,11.0,7.5
 2021-07-10,2021-07-05,2021-07-09,1352,Bundestag,INSA,17.0,28,No.Result,No.Result,17.0,12,8,11.0,7.0
 2021-07-10,2021-06-29,2021-07-06,1405,Bundestag,Kantar (Emnid),15.0,29,No.Result,No.Result,19.0,11,8,11.0,7.0
-2021-07-07,2021-06-29,2021-07-06,2950,Berlin,Wahlkreisprognose.de,21.0,No.Result,20,No.Result,16.0,10.5,14,9.0,6.5
+2021-07-07,2021-06-29,2021-07-06,2950,Berlin,Institut Wahlkreisprognose,21.0,No.Result,20,No.Result,16.0,10.5,14,9.0,6.5
 2021-07-07,2021-06-30,2021-07-07,10069,Bundestag,Civey,18.0,30,No.Result,No.Result,21.0,11,6,9.0,5.0
 2021-07-07,2021-06-29,2021-07-05,2505,Bundestag,Forsa,15.0,30,No.Result,No.Result,19.0,11,7,10.0,8.0
 2021-07-04,2021-06-28,2021-07-02,1352,Bundestag,INSA,17.0,28,No.Result,No.Result,18.0,12,7,10.0,8.0
@@ -283,7 +325,7 @@ published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,
 2021-05-12,2021-05-10,2021-05-11,1198,Bundestag,Infratest dimap,15.0,24,No.Result,No.Result,25.0,12,7,11.0,6.0
 2021-05-12,2021-05-04,2021-05-10,2501,Bundestag,Forsa,15.0,24,No.Result,No.Result,27.0,11,6,10.0,7.0
 2021-05-12,2021-05-05,2021-05-12,10003,Bundestag,Civey,16.0,27,No.Result,No.Result,24.0,11,6,10.0,6.0
-2021-05-11,2021-05-01,2021-05-09,2134,Berlin,Wahlkreisprognose.de,19.0,No.Result,14.5,No.Result,21.5,11,13,11.0,6.0
+2021-05-11,2021-05-01,2021-05-09,2134,Berlin,Institut Wahlkreisprognose,19.0,No.Result,14.5,No.Result,21.5,11,13,11.0,6.0
 2021-05-11,2021-05-03,2021-05-10,1052,Saarland,INSA,21.0,No.Result,31,No.Result,15.0,7,14,6.0,6.0
 2021-05-11,2021-05-03,2021-05-10,1000,Niedersachsen,INSA,29.0,No.Result,26,No.Result,20.0,9,5,7.0,4.0
 2021-05-11,2021-05-03,2021-05-10,2014,Nordrhein-Westfalen (NRW),INSA,20.0,No.Result,25,No.Result,26.0,11,4.5,9.0,4.5
@@ -335,7 +377,7 @@ published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,
 2021-03-29,2021-03-24,2021-03-29,1003,Bundestag,GMS,16.0,26,No.Result,No.Result,21.0,11,8,11.0,7.0
 2021-03-28,2021-03-18,2021-03-24,1447,Bundestag,Kantar (Emnid),17.0,25,No.Result,No.Result,23.0,10,9,10.0,6.0
 2021-03-26,2021-03-23,2021-03-25,1030,Bundestag,Forschungsgruppe Wahlen,15.0,28,No.Result,No.Result,23.0,9,7,12.0,6.0
-2021-03-25,2021-03-14,2021-03-25,2834,Berlin,Wahlkreisprognose.de,21.0,No.Result,16,No.Result,20.0,8.5,15,10.0,4.5
+2021-03-25,2021-03-14,2021-03-25,2834,Berlin,Institut Wahlkreisprognose,21.0,No.Result,16,No.Result,20.0,8.5,15,10.0,4.5
 2021-03-24,2021-03-17,2021-03-24,10066,Bundestag,Civey,16.0,28,No.Result,No.Result,23.0,9,7,10.0,7.0
 2021-03-24,2021-03-08,2021-03-21,1006,Bundestag,Allensbach,18.0,28.5,No.Result,No.Result,21.5,8.5,8.5,10.0,5.0
 2021-03-24,2021-03-16,2021-03-22,2511,Bundestag,Forsa,16.0,26,No.Result,No.Result,22.0,10,8,10.0,8.0
@@ -360,10 +402,10 @@ published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,
 2021-03-09,2021-03-01,2021-03-08,1501,Rheinland-Pfalz,INSA,30.0,No.Result,30,No.Result,12.0,6,3,10.0,5.0
 2021-03-08,2021-03-05,2021-03-08,2029,Bundestag,INSA,17.0,30,No.Result,No.Result,17.0,10.5,9,11.5,5.0
 2021-03-07,2021-02-25,2021-03-03,2410,Bundestag,Kantar (Emnid),16.0,32,No.Result,No.Result,19.0,9,9,10.0,5.0
-2021-03-07,2021-03-01,2021-03-06,1174,Rheinland-Pfalz,Wahlkreisprognose.de,33.0,No.Result,28,No.Result,10.0,8,2.5,10.0,3.5
+2021-03-07,2021-03-01,2021-03-06,1174,Rheinland-Pfalz,Institut Wahlkreisprognose,33.0,No.Result,28,No.Result,10.0,8,2.5,10.0,3.5
 2021-03-05,2021-03-01,2021-03-04,998,Rheinland-Pfalz,Forschungsgruppe Wahlen,33.0,No.Result,29,No.Result,11.0,7,3,9.0,4.0
 2021-03-05,2021-03-01,2021-03-04,1032,Baden-Württemberg,Forschungsgruppe Wahlen,10.0,No.Result,24,No.Result,35.0,10,3,11.0,7.0
-2021-03-04,2021-02-27,2021-03-04,1054,Baden-Württemberg,Wahlkreisprognose.de,12.5,No.Result,23,No.Result,33.0,10.5,3.5,13.0,4.5
+2021-03-04,2021-02-27,2021-03-04,1054,Baden-Württemberg,Institut Wahlkreisprognose,12.5,No.Result,23,No.Result,33.0,10.5,3.5,13.0,4.5
 2021-03-04,2021-03-01,2021-03-02,1296,Bundestag,Infratest dimap,16.0,33,No.Result,No.Result,20.0,7,7,11.0,6.0
 2021-03-04,2021-03-01,2021-03-03,1186,Rheinland-Pfalz,Infratest dimap,30.0,No.Result,28,No.Result,12.0,9,3,9.0,4.0
 2021-03-04,2021-03-01,2021-03-03,1185,Baden-Württemberg,Infratest dimap,10.0,No.Result,25,No.Result,33.0,10,4,12.0,6.0
@@ -498,7 +540,7 @@ published,start,end,persons,parliament,institute,SPD,CDU/CSU,CDU,CSU,GRÜNE,FDP,
 2020-10-12,2020-10-07,2020-10-12,1005,Bundestag,GMS,16.0,36,No.Result,No.Result,20.0,5,7,10.0,6.0
 2020-10-12,2020-09-28,2020-10-05,1007,Berlin,INSA,18.0,No.Result,21,No.Result,20.0,6,16,12.0,7.0
 2020-10-11,2020-10-01,2020-10-07,1411,Bundestag,Kantar (Emnid),17.0,34,No.Result,No.Result,20.0,5,8,9.0,7.0
-2020-10-10,2020-09-30,2020-10-07,1089,Brandenburg,Wahlkreisprognose.de,23.0,No.Result,17,No.Result,13.5,2,12.5,19.0,5.5
+2020-10-10,2020-09-30,2020-10-07,1089,Brandenburg,Institut Wahlkreisprognose,23.0,No.Result,17,No.Result,13.5,2,12.5,19.0,5.5
 2020-10-10,2020-10-05,2020-10-09,2504,Bundestag,Forsa,15.0,36,No.Result,No.Result,20.0,5,8,9.0,7.0
 2020-10-09,2020-10-06,2020-10-08,1229,Bundestag,Forschungsgruppe Wahlen,16.0,37,No.Result,No.Result,20.0,5,7,10.0,5.0
 2020-10-08,2020-09-29,2020-10-06,1043,Brandenburg,INSA,21.0,No.Result,17,No.Result,16.0,4,13,20.0,4.0

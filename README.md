@@ -18,7 +18,7 @@ Compares news coverage of German politicians/parties to election polls.
 
 **4.** Metrics at least two. Sonarcube would be great. Other non trivial metrics are also fine. -> See Metrics folder
 
-**5.** Clean Code Development: at least 5 points you can show me + >>10 points on your personal cheat sheet
+**5.** Clean Code Development: at least 5 points you can show me + >>10 points on your personal cheat sheet -> see folder CleanCode
 
 **6.** Build Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc.
 

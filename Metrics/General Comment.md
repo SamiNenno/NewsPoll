@@ -28,16 +28,6 @@ please have a look at the individual files (Newscounter, Preprocess, Visuals), i
 | Method     | M      |
 | Class      | C      |
 
-
-
-**Maintainability Index**
-
-| MI score | Rank | Maintainability |
-|----------|------|-----------------|
-| 100 - 20 | A    | Very high       |
-| 19 - 10  | B    | Medium          |
-| 9 - 0    | C    | Extremely low   |
-
 | Construct        | Effect on CC | Reasoning                                                                               |
 |------------------|--------------|-----------------------------------------------------------------------------------------|
 | if               | +1           | An if statement is a single decision.                                                   |
@@ -51,6 +41,16 @@ please have a look at the individual files (Newscounter, Preprocess, Visuals), i
 | assert           | +1           | The assert statement internally roughly equals a conditional statement.                 |
 | Comprehension    | +1           | A list/set/dict comprehension of generator expression is equivalent to a for loop.      |
 | Boolean Operator | +1           | Every boolean operator (and, or) adds a decision point.                                 |
+
+
+**Maintainability Index**
+
+| MI score | Rank | Maintainability |
+|----------|------|-----------------|
+| 100 - 20 | A    | Very high       |
+| 19 - 10  | B    | Medium          |
+| 9 - 0    | C    | Extremely low   |
+
 
 **Raw metrics**
 

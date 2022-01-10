@@ -11,7 +11,7 @@ It seemed to be the most natural way for Python. Radon supports:
 Here is a short guideline how to interpret the result,
 please have a look at the individual files (Newscounter, Preprocess, Visuals), in order to see the respective results:
 
-*Cyclomatic complexity*
+**Cyclomatic complexity**
 
 | CC score | Rank | Risk                                    |
 |----------|------|-----------------------------------------|
@@ -30,7 +30,7 @@ please have a look at the individual files (Newscounter, Preprocess, Visuals), i
 
 
 
-*Maintainability Index*
+**Maintainability Index**
 
 | MI score | Rank | Maintainability |
 |----------|------|-----------------|
@@ -52,7 +52,7 @@ please have a look at the individual files (Newscounter, Preprocess, Visuals), i
 | Comprehension    | +1           | A list/set/dict comprehension of generator expression is equivalent to a for loop.      |
 | Boolean Operator | +1           | Every boolean operator (and, or) adds a decision point.                                 |
 
-*Raw metrics*
+**Raw metrics**
 
 | Abbreviation | Explanation                                         |
 |--------------|-----------------------------------------------------|
@@ -63,7 +63,7 @@ please have a look at the individual files (Newscounter, Preprocess, Visuals), i
 | multi        | the number of lines representing multi-line strings |
 | blank        | the number of blank lines                           |
 
-*Halstead metrics*
+**Halstead metrics**
 
 | Name              | Description                          |
 |-------------------|--------------------------------------|

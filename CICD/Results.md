@@ -56,10 +56,9 @@ Using build environment variables:
 The redacted variables listed above will be masked in run step output.
 
 **Checkout Code**
-#!/bin/sh
+
 set -e
-# Workaround old docker images with incorrect $HOME
-# check https://github.com/docker/docker/issues/2968 for details
+
 if [ "${HOME}" = "/" ]
 then
   export HOME=$(getent passwd $(id -un) | cut -d: -f6)
@@ -89,7 +88,6 @@ fi
 
 export GIT_SSH_COMMAND='ssh -i "$SSH_CONFIG_DIR/id_rsa" -o UserKnownHostsFile="$SSH_CONFIG_DIR/known_hosts"'
 
-# use git+ssh instead of https
 git config --global url."ssh://git@github.com".insteadOf "https://github.com" || true
 git config --global gc.auto 0 || true
 
@@ -142,7 +140,7 @@ Your branch is up to date with 'origin/master'.
 HEAD is now at 95959e3 Small fix on config.yml
 
 **Install dependencies**
-#!/bin/bash -eo pipefail
+!/bin/bash -eo pipefail
 python3 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
@@ -229,7 +227,7 @@ You should consider upgrading via the '/home/circleci/repo/venv/bin/python3 -m p
 CircleCI received exit code 0
 
 **Run tests**
-#!/bin/bash -eo pipefail
+!/bin/bash -eo pipefail
 . venv/bin/activate
 flake8 --exclude=venv* --statistics
 pytest Preprocess.py

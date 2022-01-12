@@ -38,7 +38,7 @@ Compares news coverage of German politicians/parties to election polls.
 
 **11.** Functional Programming (prove that you have covered all functional aspects in your code as
     *-->* only final data structures
-    *-->* (mostly) side effect free functions. See [Newscounter.py](Newscounter.py) "relative_count()"
-    *-->* the use of higher-order functions. See [Newscounter.py](Newscounter.py) "relative_count()"
-    *-->* functions as parameters and return values. See [Newscounter.py](Newscounter.py) "relative_count()"
-    *-->* use closures / anonymous functions. See Lambda Function in [Newscounter.py](Newscounter.py) "datecasting()"
+    *-->* (mostly) side effect free functions. See [Newscounter.py](Newscounter.py) "relative_count()"\
+    *-->* the use of higher-order functions. See [Newscounter.py](Newscounter.py) "relative_count()"\
+    *-->* functions as parameters and return values. See [Newscounter.py](Newscounter.py) "relative_count()"\
+    *-->* use closures / anonymous functions. See Lambda Function in [Newscounter.py](Newscounter.py) "datecasting()"\

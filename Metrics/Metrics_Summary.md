@@ -12,7 +12,7 @@ Here are the results and a short guideline how to interpret the results:
 
 **Cyclomatic complexity**
 radon cc /Users/macbook/Desktop/Python_Files/NewsPoll -s -a\
-/Users/macbook/Desktop/Python_Files/NewsPoll/Preprocess.py\
+/Users/macbook/Desktop/Python_Files/NewsPoll/**Preprocess.py**\
     M 72:4 Poll.parse_poll - C (14)\
     M 172:4 Keywords.create_searchterms - C (14)\
     C 9:0 Poll - B (6)\
@@ -34,7 +34,7 @@ radon cc /Users/macbook/Desktop/Python_Files/NewsPoll -s -a\
     M 286:4 Relevance.fit - A (1)\
     M 326:4 Frequency_Table.save_table - A (1)\
     M 334:4 Frequency_Table.fit - A (1)\
-/Users/macbook/Desktop/Python_Files/NewsPoll/Newscounter.py\
+/Users/macbook/Desktop/Python_Files/NewsPoll/**Newscounter.py**\
     M 32:4 Newscounter.count - B (6)\
     C 8:0 Newscounter - A (3)\
     M 59:4 Newscounter.party_count - A (3)\
@@ -46,7 +46,7 @@ radon cc /Users/macbook/Desktop/Python_Files/NewsPoll -s -a\
     M 73:4 Newscounter.relative_count - A (1)\
     M 101:4 Newscounter.create_relative_frame - A (1)\
     M 119:4 Newscounter.fit - A (1)\
-/Users/macbook/Desktop/Python_Files/NewsPoll/Visuals.py\
+/Users/macbook/Desktop/Python_Files/NewsPoll/**Visuals.py**\
     M 41:4 Visuals.multiple_count - B (6)\
     M 16:4 Visuals.individual_count - A (5)\
     C 7:0 Visuals - A (4)\
@@ -55,13 +55,13 @@ radon cc /Users/macbook/Desktop/Python_Files/NewsPoll -s -a\
     M 8:4 Visuals.__init__ - A (1)\
     M 90:4 Visuals.plot_poll - A (1)\
     M 143:4 Visuals.compare_individual_count - A (1)\
-/Users/macbook/Desktop/Python_Files/NewsPoll/Unittest_Scripts/test_Preprocess.py\
+/Users/macbook/Desktop/Python_Files/NewsPoll/Unittest_Scripts/**test_Preprocess.py**\
     C 4:0 MyTestCase - A (2)\
     M 6:4 MyTestCase.test_poll - A (1)\
     M 19:4 MyTestCase.test_keywords - A (1)\
     M 24:4 MyTestCase.test_relevance - A (1)\
     M 30:4 MyTestCase.test_frequency_table - A (1)\
-/Users/macbook/Desktop/Python_Files/NewsPoll/DSL/DSL.py\
+/Users/macbook/Desktop/Python_Files/NewsPoll/DSL/**DSL.py**\
     F 94:0 match_phrase - B (7)\
     F 4:0 get_articles - A (1)\
     F 14:0 get_content - A (1)\
@@ -110,11 +110,13 @@ Average complexity: A (2.611111111111111)\
 **Maintainability Index**
 
 radon mi /Users/macbook/Desktop/Python_Files/NewsPoll -s
-/Users/macbook/Desktop/Python_Files/NewsPoll/Newsfeeler.py - A (100.00)
-/Users/macbook/Desktop/Python_Files/NewsPoll/Preprocess.py - A (38.00)
-/Users/macbook/Desktop/Python_Files/NewsPoll/Newscounter.py - A (42.83)
-/Users/macbook/Desktop/Python_Files/NewsPoll/Visuals.py - A (50.96)
-/Users/macbook/Desktop/Python_Files/NewsPoll/Unittest_Scripts/test_Preprocess.py - A (85.51)
+/Users/macbook/Desktop/Python_Files/NewsPoll/Newsfeeler.py - A (100.00)\
+/Users/macbook/Desktop/Python_Files/NewsPoll/Preprocess.py - A (48.20)\
+/Users/macbook/Desktop/Python_Files/NewsPoll/Newscounter.py - A (48.14)\
+/Users/macbook/Desktop/Python_Files/NewsPoll/Visuals.py - A (50.96)\
+/Users/macbook/Desktop/Python_Files/NewsPoll/Unittest_Scripts/test_Preprocess.py - A (85.51)\
+/Users/macbook/Desktop/Python_Files/NewsPoll/DSL/DSL.py - A (65.97)\
+
 
 
 | MI score | Rank | Maintainability |
@@ -127,77 +129,90 @@ radon mi /Users/macbook/Desktop/Python_Files/NewsPoll -s
 **Raw metrics**
 radon raw /Users/macbook/Desktop/Python_Files/NewsPoll -s
 /Users/macbook/Desktop/Python_Files/NewsPoll/**Newsfeeler.py**
-    LOC: 9
-    LLOC: 7
-    SLOC: 7
-    Comments: 0
-    Single comments: 0
-    Multi: 0
-    Blank: 2
-    - Comment Stats
-        (C % L): 0%
-        (C % S): 0%
-        (C + M % L): 0%
-/Users/macbook/Desktop/Python_Files/NewsPoll/**Preprocess.py**
-    LOC: 271
-    LLOC: 209
-    SLOC: 219
-    Comments: 21
-    Single comments: 21
-    Multi: 0
-    Blank: 31
-    - Comment Stats
-        (C % L): 8%
-        (C % S): 10%
-        (C + M % L): 8%
-/Users/macbook/Desktop/Python_Files/NewsPoll/**Newscounter.py**
-    LOC: 129
-    LLOC: 106
-    SLOC: 103
-    Comments: 2
-    Single comments: 2
-    Multi: 0
-    Blank: 24
-    - Comment Stats
-        (C % L): 2%
-        (C % S): 2%
-        (C + M % L): 2%
-/Users/macbook/Desktop/Python_Files/NewsPoll/**Visuals.py**
-    LOC: 178
-    LLOC: 94
-    SLOC: 159
-    Comments: 9
-    Single comments: 9
-    Multi: 0
-    Blank: 10
-    - Comment Stats
-        (C % L): 5%
-        (C % S): 6%
-        (C + M % L): 5%
-/Users/macbook/Desktop/Python_Files/NewsPoll/Unittest_Scripts/**test_Preprocess.py**
-    LOC: 37
-    LLOC: 25
-    SLOC: 25
-    Comments: 4
-    Single comments: 4
-    Multi: 0
-    Blank: 8
-    - Comment Stats
-        (C % L): 11%
-        (C % S): 16%
-        (C + M % L): 11%
-** Total **
-    LOC: 624
-    LLOC: 441
-    SLOC: 513
-    Comments: 36
-    Single comments: 36
-    Multi: 0
-    Blank: 75
-    - Comment Stats
-        (C % L): 6%
-        (C % S): 7%
-        (C + M % L): 6%
+    LOC: 9\
+    LLOC: 7\
+    SLOC: 7\
+    Comments: 0\
+    Single comments: 0\
+    Multi: 0\
+    Blank: 2\
+    - Comment Stats\
+        (C % L): 0%\
+        (C % S): 0%\
+        (C + M % L): 0%\
+/Users/macbook/Desktop/Python_Files/NewsPoll/**Preprocess.py**\
+    LOC: 356\
+    LLOC: 226\
+    SLOC: 219\
+    Comments: 19\
+    Single comments: 19\
+    Multi: 72\
+    Blank: 46\
+    - Comment Stats\
+        (C % L): 5%\
+        (C % S): 9%\
+        (C + M % L): 26%\
+/Users/macbook/Desktop/Python_Files/NewsPoll/**Newscounter.py**\
+    LOC: 134\
+    LLOC: 107\
+    SLOC: 108\
+    Comments: 2\
+    Single comments: 2\
+    Multi: 4\
+    Blank: 20\
+    - Comment Stats\
+        (C % L): 1%\
+        (C % S): 2%\
+        (C + M % L): 4%\
+/Users/macbook/Desktop/Python_Files/NewsPoll/**Visuals.py**\
+    LOC: 178\
+    LLOC: 94\
+    SLOC: 159\
+    Comments: 9\
+    Single comments: 9\
+    Multi: 0\
+    Blank: 10\
+    - Comment Stats\
+        (C % L): 5%\
+        (C % S): 6%\
+        (C + M % L): 5%\
+/Users/macbook/Desktop/Python_Files/NewsPoll/Unittest_Scripts/**test_Preprocess.py**\
+    LOC: 37\
+    LLOC: 25\
+    SLOC: 25\
+    Comments: 4\
+    Single comments: 4\
+    Multi: 0\
+    Blank: 8\
+    - Comment Stats\
+        (C % L): 11%\
+        (C % S): 16%\
+        (C + M % L): 11%\
+/Users/macbook/Desktop/Python_Files/NewsPoll/DSL/**DSL.py**\
+    LOC: 144\
+    LLOC: 71\
+    SLOC: 65\
+    Comments: 0\
+    Single comments: 0\
+    Multi: 55\
+    Blank: 24\
+    - Comment Stats\
+        (C % L): 0%\
+        (C % S): 0%\
+        (C + M % L): 38%\
+** Total **\
+    LOC: 858\
+    LLOC: 530\
+    SLOC: 583\
+    Comments: 34\
+    Single comments: 34\
+    Multi: 131\
+    Blank: 110\
+    - Comment Stats\
+        (C % L): 4%\
+        (C % S): 6%\
+        (C + M % L): 19%\
+
 
 | Abbreviation | Explanation                                         |
 |--------------|-----------------------------------------------------|
@@ -210,71 +225,85 @@ radon raw /Users/macbook/Desktop/Python_Files/NewsPoll -s
 
 **Halstead metrics**
  radon hal /Users/macbook/Desktop/Python_Files/NewsPoll
-/Users/macbook/Desktop/Python_Files/NewsPoll/**Newsfeeler.py**:
-    h1: 0
-    h2: 0
-    N1: 0
-    N2: 0
-    vocabulary: 0
-    length: 0
-    calculated_length: 0
-    volume: 0
-    difficulty: 0
-    effort: 0
-    time: 0.0
-    bugs: 0.0
-/Users/macbook/Desktop/Python_Files/NewsPoll/**Preprocess.py**:
-    h1: 9
-    h2: 84
-    N1: 52
-    N2: 105
-    vocabulary: 93
-    length: 157
-    calculated_length: 565.4839885263967
-    volume: 1026.647933343961
-    difficulty: 5.625
-    effort: 5774.894625059781
-    time: 320.82747916998784
-    bugs: 0.34221597778132035
-/Users/macbook/Desktop/Python_Files/NewsPoll/**Newscounter.py**:
-    h1: 8
-    h2: 43
-    N1: 26
-    N2: 51
-    vocabulary: 51
-    length: 77
-    calculated_length: 257.3293844521902
-    volume: 436.7767513318052
-    difficulty: 4.744186046511628
-    effort: 2072.1501691090293
-    time: 115.11945383939052
-    bugs: 0.14559225044393506
-/Users/macbook/Desktop/Python_Files/NewsPoll/**Visuals.py**:
-    h1: 3
-    h2: 30
-    N1: 17
-    N2: 34
-    vocabulary: 33
-    length: 51
-    calculated_length: 151.96160537041902
-    volume: 257.2641000872811
-    difficulty: 1.7
-    effort: 437.3489701483779
-    time: 24.297165008243216
-    bugs: 0.0857547000290937
-/Users/macbook/Desktop/Python_Files/NewsPoll/Unittest_Scripts/**test_Preprocess.py**:
-    h1: 1
-    h2: 2
-    N1: 1
-    N2: 2
-    vocabulary: 3
-    length: 3
-    calculated_length: 2.0
-    volume: 4.754887502163469
-    difficulty: 0.5
-    effort: 2.3774437510817346
-    time: 0.1320802083934297
-    bugs: 0.0015849625007211565
+/Users/macbook/Desktop/Python_Files/NewsPoll/**Newsfeeler.py**:\
+     h1: 0\
+    h2: 0\
+    N1: 0\
+    N2: 0\
+    vocabulary: 0\
+    length: 0\
+    calculated_length: 0\
+    volume: 0\
+    difficulty: 0\
+    effort: 0\
+    time: 0.0\
+    bugs: 0.0\
+/Users/macbook/Desktop/Python_Files/NewsPoll/**Preprocess.py**:\
+    h1: 9\
+    h2: 84\
+    N1: 52\
+    N2: 105\
+    vocabulary: 93\
+    length: 157\
+    calculated_length: 565.4839885263967\
+    volume: 1026.647933343961\
+    difficulty: 5.625\
+    effort: 5774.894625059781\
+    time: 320.82747916998784\
+    bugs: 0.34221597778132035\
+/Users/macbook/Desktop/Python_Files/NewsPoll/**Newscounter.py**:\
+    h1: 8\
+    h2: 43\
+    N1: 26\
+    N2: 51\
+    vocabulary: 51\
+    length: 77\
+    calculated_length: 257.3293844521902\
+    volume: 436.7767513318052\
+    difficulty: 4.744186046511628\
+    effort: 2072.1501691090293\
+    time: 115.11945383939052\
+    bugs: 0.14559225044393506\
+/Users/macbook/Desktop/Python_Files/NewsPoll/**Visuals.py**:\
+    h1: 3\
+    h2: 30\
+    N1: 17\
+    N2: 34\
+    vocabulary: 33\
+    length: 51\
+    calculated_length: 151.96160537041902\
+    volume: 257.2641000872811\
+    difficulty: 1.7\
+    effort: 437.3489701483779\
+    time: 24.297165008243216\
+    bugs: 0.0857547000290937\
+/Users/macbook/Desktop/Python_Files/NewsPoll/Unittest_Scripts/**test_Preprocess.py**:\
+    h1: 1\
+    h2: 2\
+    N1: 1\
+    N2: 2\
+    vocabulary: 3\
+    length: 3\
+    calculated_length: 2.0\
+    volume: 4.754887502163469\
+    difficulty: 0.5\
+    effort: 2.3774437510817346\
+    time: 0.1320802083934297\
+    bugs: 0.0015849625007211565\
+/Users/macbook/Desktop/Python_Files/NewsPoll/DSL/**DSL.py**:\
+    h1: 5\
+    h2: 69\
+    N1: 41\
+    N2: 82\
+    vocabulary: 74\
+    length: 123\
+    calculated_length: 433.09782799213053\
+    volume: 763.762763972361\
+    difficulty: 2.971014492753623\
+    effort: 2269.150240787449\
+    time: 126.06390226596939\
+    bugs: 0.254587587990787\
+
 
 | Name              | Description                          |
 |-------------------|--------------------------------------|

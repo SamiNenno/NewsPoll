@@ -19,7 +19,7 @@ Compares news coverage of German politicians/parties to election polls.
 **4.** Metrics at least two. Sonarcube would be great. Other non trivial metrics are also fine.\
     *-->* [see folder Metrics](Metrics) I have chosen radon as a tool for metrics. Radon is a python library
     for cyclomatic complexity, Halstead metrics, and others. More information and documentation of the tests
-    can be found [Metrics_Summary.md](Metrics_Summary.md)
+    can be found [here](https://github.com/SamiNenno/NewsPoll/blob/1a93daafec718cc3cc2b9b5444f3245fee97510c/Metrics/Metrics_Summary.md)
 
 **5.** Clean Code Development: at least 5 points you can show me + >>10 points on your personal cheat sheet\
     *-->* [see folder CleanCode](CleanCode) Explanation can be found in the same folder or [here](WhyIsThisCleanCode.txt)

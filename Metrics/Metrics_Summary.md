@@ -11,59 +11,70 @@ It seemed to be the most natural way for Python. Radon supports:
 Here are the results and a short guideline how to interpret the results:
 
 **Cyclomatic complexity**
-radon cc /Users/macbook/Desktop/Python_Files/NewsPoll -s -a
-/Users/macbook/Desktop/Python_Files/NewsPoll/**Preprocess.py**
-    M 65:4 Poll.parse_poll - C (14)
-    M 146:4 Keywords.create_searchterms - C (14)
-    C 9:0 Poll - B (6)
-    C 137:0 Keywords - B (6)
-    M 208:4 Relevance.search - A (4)
-    M 231:4 Frequency_Table.__init__ - A (4)
-    M 11:4 Poll.__init__ - A (3)
-    C 191:0 Relevance - A (3)
-    C 229:0 Frequency_Table - A (3)
-    M 138:4 Keywords.__init__ - A (2)
-    M 180:4 Keywords.save_searchterms - A (2)
-    M 192:4 Relevance.__init__ - A (2)
-    M 204:4 Relevance.create_search_dict - A (2)
-    M 239:4 Frequency_Table.compute_table_shape - A (2)
-    M 124:4 Poll.select_relevant_polls - A (1)
-    M 131:4 Poll.fit - A (1)
-    M 186:4 Keywords.fit - A (1)
-    M 221:4 Relevance.save_checked_newcollection - A (1)
-    M 225:4 Relevance.fit - A (1)
-    M 251:4 Frequency_Table.save_table - A (1)
-    M 254:4 Frequency_Table.fit - A (1)
-/Users/macbook/Desktop/Python_Files/NewsPoll/**Newscounter.py**
-    M 28:4 Newscounter.count - B (6)
-    C 8:0 Newscounter - A (3)
-    M 54:4 Newscounter.party_count - A (3)
-    M 24:4 Newscounter.create_search_dict - A (2)
-    M 107:4 Newscounter.date_casting - A (2)
-    M 9:4 Newscounter.__init__ - A (1)
-    M 51:4 Newscounter.save_freq_count - A (1)
-    M 61:4 Newscounter.absolute_count - A (1)
-    M 68:4 Newscounter.relative_count - A (1)
-    M 96:4 Newscounter.create_relative_frame - A (1)
-    M 118:4 Newscounter.fit - A (1)
-/Users/macbook/Desktop/Python_Files/NewsPoll/**Visuals.py**
-    M 41:4 Visuals.multiple_count - B (6)
-    M 16:4 Visuals.individual_count - A (5)
-    C 7:0 Visuals - A (4)
-    M 67:4 Visuals.party_count - A (4)
-    M 107:4 Visuals.compare_party_count - A (2)
-    M 8:4 Visuals.__init__ - A (1)
-    M 90:4 Visuals.plot_poll - A (1)
-    M 143:4 Visuals.compare_individual_count - A (1)
-/Users/macbook/Desktop/Python_Files/NewsPoll/Unittest_Scripts/**test_Preprocess.py**
-    C 4:0 MyTestCase - A (2)
-    M 6:4 MyTestCase.test_poll - A (1)
-    M 19:4 MyTestCase.test_keywords - A (1)
-    M 24:4 MyTestCase.test_relevance - A (1)
-    M 30:4 MyTestCase.test_frequency_table - A (1)
+radon cc /Users/macbook/Desktop/Python_Files/NewsPoll -s -a\
+/Users/macbook/Desktop/Python_Files/NewsPoll/Preprocess.py\
+    M 72:4 Poll.parse_poll - C (14)\
+    M 172:4 Keywords.create_searchterms - C (14)\
+    C 9:0 Poll - B (6)\
+    C 158:0 Keywords - B (6)\
+    M 259:4 Relevance.search - A (4)\
+    M 301:4 Frequency_Table.__init__ - A (4)\
+    M 18:4 Poll.__init__ - A (3)\
+    C 233:0 Relevance - A (3)\
+    C 295:0 Frequency_Table - A (3)\
+    M 164:4 Keywords.__init__ - A (2)\
+    M 211:4 Keywords.save_searchterms - A (2)\
+    M 239:4 Relevance.__init__ - A (2)\
+    M 251:4 Relevance.create_search_dict - A (2)\
+    M 309:4 Frequency_Table.compute_table_shape - A (2)\
+    M 136:4 Poll.select_relevant_polls - A (1)\
+    M 147:4 Poll.fit - A (1)\
+    M 223:4 Keywords.fit - A (1)\
+    M 277:4 Relevance.save_checked_newcollection - A (1)\
+    M 286:4 Relevance.fit - A (1)\
+    M 326:4 Frequency_Table.save_table - A (1)\
+    M 334:4 Frequency_Table.fit - A (1)\
+/Users/macbook/Desktop/Python_Files/NewsPoll/Newscounter.py\
+    M 32:4 Newscounter.count - B (6)\
+    C 8:0 Newscounter - A (3)\
+    M 59:4 Newscounter.party_count - A (3)\
+    M 28:4 Newscounter.create_search_dict - A (2)\
+    M 108:4 Newscounter.date_casting - A (2)\
+    M 9:4 Newscounter.__init__ - A (1)\
+    M 56:4 Newscounter.save_freq_count - A (1)\
+    M 66:4 Newscounter.absolute_count - A (1)\
+    M 73:4 Newscounter.relative_count - A (1)\
+    M 101:4 Newscounter.create_relative_frame - A (1)\
+    M 119:4 Newscounter.fit - A (1)\
+/Users/macbook/Desktop/Python_Files/NewsPoll/Visuals.py\
+    M 41:4 Visuals.multiple_count - B (6)\
+    M 16:4 Visuals.individual_count - A (5)\
+    C 7:0 Visuals - A (4)\
+    M 67:4 Visuals.party_count - A (4)\
+    M 107:4 Visuals.compare_party_count - A (2)\
+    M 8:4 Visuals.__init__ - A (1)\
+    M 90:4 Visuals.plot_poll - A (1)\
+    M 143:4 Visuals.compare_individual_count - A (1)\
+/Users/macbook/Desktop/Python_Files/NewsPoll/Unittest_Scripts/test_Preprocess.py\
+    C 4:0 MyTestCase - A (2)\
+    M 6:4 MyTestCase.test_poll - A (1)\
+    M 19:4 MyTestCase.test_keywords - A (1)\
+    M 24:4 MyTestCase.test_relevance - A (1)\
+    M 30:4 MyTestCase.test_frequency_table - A (1)\
+/Users/macbook/Desktop/Python_Files/NewsPoll/DSL/DSL.py\
+    F 94:0 match_phrase - B (7)\
+    F 4:0 get_articles - A (1)\
+    F 14:0 get_content - A (1)\
+    F 24:0 limit_articles - A (1)\
+    F 33:0 object - A (1)\
+    F 44:0 onlyverb - A (1)\
+    F 56:0 adjective - A (1)\
+    F 68:0 verbobject - A (1)\
+    F 81:0 verbadjective - A (1)\
 
-45 blocks (classes, functions, methods) analyzed.
-Average complexity: A (2.8)
+54 blocks (classes, functions, methods) analyzed.\
+Average complexity: A (2.611111111111111)\
+
 
 
 | CC score | Rank | Risk                                    |

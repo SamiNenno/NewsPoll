@@ -22,7 +22,7 @@ Compares news coverage of German politicians/parties to election polls.
     can be found [here](https://github.com/SamiNenno/NewsPoll/blob/1a93daafec718cc3cc2b9b5444f3245fee97510c/Metrics/Metrics_Summary.md)
 
 **5.** Clean Code Development: at least 5 points you can show me + >>10 points on your personal cheat sheet\
-    *-->* [see folder CleanCode](CleanCode) Explanation can be found in the same folder or [here](WhyIsThisCleanCode.txt)
+    *-->* [see folder CleanCode](CleanCode) Explanation can be found in the same folder or [here](https://github.com/SamiNenno/NewsPoll/blob/56fd9289c56c24ce1abfff076c4628915275760b/CleanCode/WhyIsThisCleanCode.txt)
 
 **6.** Build Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc.\
 

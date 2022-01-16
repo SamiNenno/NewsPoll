@@ -29,7 +29,8 @@ plot above and below.
 
 **6.** Build Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc.\
     *-->* I chose [Pybuilder](https://pybuilder.io/) as a build management tool. The tool is specifically designed for python
-    and allows to integrate libraries such as flake8 and it performs unit test. You can find the results of the successful build here.
+    and allows to integrate libraries such as flake8 and it performs unit test. You can find the results of the successful build [here](https://github.com/SamiNenno/NewsPoll/blob/master/Pybuilder_doc.txt).
+    
 
 **7.** Integrate some nice Unit-Tests in your Code to be integrated into the Build\
     *-->* [see folder Unittest_Scripts](Unittest_Scripts). I have written some unit-tests for the Preprocess.py

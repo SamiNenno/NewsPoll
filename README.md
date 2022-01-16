@@ -18,6 +18,9 @@ plot above and below.
     *-->* [see folder UML](UML) I have chosen Class Diagrams, Object Diagrams, and Use-case Diagrams
 
 **3.** DDD If your domain is too small, invent other domains around and document these domains (as if you have 10 Mio € from Edlich-Investment!) Develop a clear strategic design with mappings/relationships with 5-0 Domains. It would be nice if these domains are derived from an Event-Storming (but not mandatory).\
+    *-->* I used my 10 Mio € for creating an application that analyzes news and poll results. Parts of the app are based on the
+    Preprocess.py, Newscounter.py, and Newsfeeler.py scripts. Here is the [link](https://miro.com/app/board/uXjVOVP52L4=/?invite_link_id=50506934934) for the Miroboard with which I created
+    the context map. If it does not work, you can find the board as pdf of jpg in the [DDD](DDD) folder.
 
 **4.** Metrics at least two. Sonarcube would be great. Other non trivial metrics are also fine.\
     *-->* [see folder Metrics](Metrics) I have chosen radon as a tool for metrics. Radon is a python library

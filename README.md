@@ -28,6 +28,8 @@ plot above and below.
     *-->* [see folder CleanCode](CleanCode) Explanation can be found in the same folder or [here](https://github.com/SamiNenno/NewsPoll/blob/56fd9289c56c24ce1abfff076c4628915275760b/CleanCode/WhyIsThisCleanCode.txt)
 
 **6.** Build Management with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc.\
+    *-->* I chose [Pybuilder](https://pybuilder.io/) as a build management tool. The tool is specifically designed for python
+    and allows to integrate libraries such as flake8 and it performs unit test. You can find the results of the successful build here.
 
 **7.** Integrate some nice Unit-Tests in your Code to be integrated into the Build\
     *-->* [see folder Unittest_Scripts](Unittest_Scripts). I have written some unit-tests for the Preprocess.py

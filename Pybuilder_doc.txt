@@ -1,0 +1,63 @@
+(base) MacBook-Pro-8:NewsPoll macbook$ pyb
+PyBuilder version 0.13.4
+Build started at 2022-01-16 14:57:31
+------------------------------------------------------------
+[INFO]  Building NewsPoll version 1.0.dev0
+[INFO]  Executing build in /Users/macbook/Desktop/Python_Files/NewsPoll
+[INFO]  Going to execute task publish
+[INFO]  Processing plugin packages 'coverage~=6.0' to be installed with {'upgrade': True}
+[INFO]  Processing plugin packages 'flake8~=4.0' to be installed with {'upgrade': True}
+[INFO]  Processing plugin packages 'pypandoc~=1.4' to be installed with {'upgrade': True}
+[INFO]  Processing plugin packages 'setuptools>=38.6.0' to be installed with {'upgrade': True}
+[INFO]  Processing plugin packages 'twine>=1.15.0' to be installed with {'upgrade': True}
+[INFO]  Processing plugin packages 'unittest-xml-reporting~=3.0.4' to be installed with {'upgrade': True}
+[INFO]  Processing plugin packages 'wheel>=0.34.0' to be installed with {'upgrade': True}
+[INFO]  Creating target 'build' VEnv in '/Users/macbook/Desktop/Python_Files/NewsPoll/target/venv/build/cpython-3.8.8.final.0'
+[INFO]  Processing dependency packages 'requirements.txt' to be installed with {}
+[INFO]  Creating target 'test' VEnv in '/Users/macbook/Desktop/Python_Files/NewsPoll/target/venv/test/cpython-3.8.8.final.0'
+[INFO]  Processing dependency packages 'requirements.txt' to be installed with {}
+[INFO]  Requested coverage for tasks: pybuilder.plugins.python.unittest_plugin:run_unit_tests
+[INFO]  Running unit tests
+[INFO]  Executing unit tests from Python modules in /Users/macbook/Desktop/Python_Files/NewsPoll/Unittest_Scripts
+Create searchterms...
+
+Load poll data...
+
+[INFO]  Executed 4 unit tests
+[INFO]  All unit tests passed.
+[INFO]  Building distribution in /Users/macbook/Desktop/Python_Files/NewsPoll/target/dist/NewsPoll-1.0.dev0
+[INFO]  Copying scripts to /Users/macbook/Desktop/Python_Files/NewsPoll/target/dist/NewsPoll-1.0.dev0/scripts
+[INFO]  Writing setup.py as /Users/macbook/Desktop/Python_Files/NewsPoll/target/dist/NewsPoll-1.0.dev0/setup.py
+[INFO]  Collecting coverage information for 'pybuilder.plugins.python.unittest_plugin:run_unit_tests'
+[WARN]  ut_coverage_branch_threshold_warn is 0 and branch coverage will not be checked
+[WARN]  ut_coverage_branch_partial_threshold_warn is 0 and partial branch coverage will not be checked
+[INFO]  Running unit tests
+[INFO]  Executing unit tests from Python modules in /Users/macbook/Desktop/Python_Files/NewsPoll/Unittest_Scripts
+
+
+.
+.
+. (excluded some output because it was getting too long)
+Match in: taz from 01.01.2022
+Match in: taz from 18.08.2021
+Match in: taz from 10.12.2021
+Match in: taz from 31.08.2021
+Match in: taz from 30.11.2021
+[INFO]  Executed 4 unit tests
+[INFO]  All unit tests passed.
+[INFO]  Building distribution in /Users/macbook/Desktop/Python_Files/NewsPoll/target/dist/NewsPoll-1.0.dev0
+[INFO]  Copying scripts to /Users/macbook/Desktop/Python_Files/NewsPoll/target/dist/NewsPoll-1.0.dev0/scripts
+[INFO]  Writing setup.py as /Users/macbook/Desktop/Python_Files/NewsPoll/target/dist/NewsPoll-1.0.dev0/setup.py
+[INFO]  Building binary distribution in /Users/macbook/Desktop/Python_Files/NewsPoll/target/dist/NewsPoll-1.0.dev0
+[INFO]  Running Twine check for generated artifacts
+------------------------------------------------------------
+BUILD SUCCESSFUL
+------------------------------------------------------------
+Build Summary
+             Project: NewsPoll
+             Version: 1.0.dev0
+      Base directory: /Users/macbook/Desktop/Python_Files/NewsPoll
+        Environments:
+               Tasks: prepare [11220 ms] compile_sources [0 ms] run_unit_tests [519361 ms] package [6 ms] run_integration_tests [0 ms] verify [0 ms] publish [2695 ms]
+Build finished at 2022-01-16 14:55:29
+Build took 535 seconds (535294 ms)

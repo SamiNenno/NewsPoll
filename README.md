@@ -1,4 +1,4 @@
-![alt text](https://raw.githubusercontent.com/SamiNenno/NewsPoll/master/Images/Front_Image.png)
+![alt text](/Users/macbook/Desktop/Python_Files/NewsPoll/Images/Party_Newspaper_vs_Poll.png)
 
 
 # NewsPolls
@@ -6,7 +6,10 @@
 
 Compares news coverage of German politicians/parties to election polls.
 
-
+All core scripts can be found here. Note that due to time constraints, I could not finish the Newsfeeler.py
+that would classify the sentiment towards specific politicians/parties. Newscounter.py, however, works just
+fine. You can use it to compare mentions and poll results of specific politicians/parties as displayed in the
+plot above and below.
 
 
 **1.** Use and understand Git!\
@@ -50,3 +53,19 @@ Compares news coverage of German politicians/parties to election polls.
     *-->* the use of higher-order functions. See [Newscounter.py](Newscounter.py) "relative_count()"\
     *-->* functions as parameters and return values. See [Newscounter.py](Newscounter.py) "relative_count()"\
     *-->* use closures / anonymous functions. See Lambda Function in [Newscounter.py](Newscounter.py) "datecasting()"\
+
+
+
+![alt text](/Users/macbook/Desktop/Python_Files/NewsPoll/Images/Party_Newspaper.png)
+
+![alt text](/Users/macbook/Desktop/Python_Files/NewsPoll/Images/Party_Poll.png)
+
+![alt text](/Users/macbook/Desktop/Python_Files/NewsPoll/Images/Merkel.png)
+
+![alt text](/Users/macbook/Desktop/Python_Files/NewsPoll/Images/Laschet_Scholz_Baerbock.png)
+
+![alt text](/Users/macbook/Desktop/Python_Files/NewsPoll/Images/Scholz_vs_SPD.png)
+
+![alt text](/Users/macbook/Desktop/Python_Files/NewsPoll/Images/Baerboch_vs_Gruen.png)
+
+![alt text](/Users/macbook/Desktop/Python_Files/NewsPoll/Images/Laschet_vs_CDU.png)

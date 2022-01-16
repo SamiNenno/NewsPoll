@@ -1,5 +1,5 @@
 import unittest
-from Preprocess import Poll, Keywords, Relevance, Frequency_Table
+from Scripts.Preprocess import Poll, Keywords, Relevance, Frequency_Table
 
 class MyTestCase(unittest.TestCase):
 

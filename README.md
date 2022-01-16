@@ -1,4 +1,4 @@
-![alt text](/Users/macbook/Desktop/Python_Files/NewsPoll/Images/Party_Newspaper_vs_Poll.png)
+![alt text](https://github.com/SamiNenno/NewsPoll/blob/master/Images/Party_Newspaper_vs_Poll.png)
 
 
 # NewsPolls
@@ -56,16 +56,16 @@ plot above and below.
 
 
 
-![alt text](/Users/macbook/Desktop/Python_Files/NewsPoll/Images/Party_Newspaper.png)
+![alt text](https://github.com/SamiNenno/NewsPoll/blob/master/Images/Party_Newspaper.png)
 
-![alt text](/Users/macbook/Desktop/Python_Files/NewsPoll/Images/Party_Poll.png)
+![alt text](https://github.com/SamiNenno/NewsPoll/blob/master/Images/Party_Poll.png)
 
-![alt text](/Users/macbook/Desktop/Python_Files/NewsPoll/Images/Merkel.png)
+![alt text](https://github.com/SamiNenno/NewsPoll/blob/master/Images/Merkel.png)
 
-![alt text](/Users/macbook/Desktop/Python_Files/NewsPoll/Images/Laschet_Scholz_Baerbock.png)
+![alt text](https://github.com/SamiNenno/NewsPoll/blob/master/Images/Laschet_Scholz_Baerbock.png)
 
-![alt text](/Users/macbook/Desktop/Python_Files/NewsPoll/Images/Scholz_vs_SPD.png)
+![alt text](https://github.com/SamiNenno/NewsPoll/blob/master/Images/Scholz_vs_SPD.png)
 
-![alt text](/Users/macbook/Desktop/Python_Files/NewsPoll/Images/Baerboch_vs_Gruen.png)
+![alt text](https://github.com/SamiNenno/NewsPoll/blob/master/Images/Baerboch_vs_Gruen.png)
 
-![alt text](/Users/macbook/Desktop/Python_Files/NewsPoll/Images/Laschet_vs_CDU.png)
+![alt text](https://github.com/SamiNenno/NewsPoll/blob/master/Images/Laschet_vs_CDU.png)

@@ -6,7 +6,7 @@
 
 Compares news coverage of German politicians/parties to election polls.
 
-All core scripts can be found here. Note that due to time constraints, I could not finish the Newsfeeler.py
+All core scripts can be found [here](Scripts). Note that due to time constraints, I could not finish the Newsfeeler.py
 that would classify the sentiment towards specific politicians/parties. Newscounter.py, however, works just
 fine. You can use it to compare mentions and poll results of specific politicians/parties as displayed in the
 plot above and below.
